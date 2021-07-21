@@ -1,2 +1,3 @@
 # terminusdb-seshat
-seshat schemata
+seshat schemata developed using terminusdb clients
+
