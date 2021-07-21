@@ -1,0 +1,2 @@
+# terminusdb-seshat
+seshat schemata
