@@ -4,169 +4,203 @@ from terminusdb_client.woqlschema.woql_schema import (
     DocumentTemplate,
     EnumTemplate,
     HashKey,
-    TaggedUnion,
+    TaggedUnion, # what is this?
     WOQLSchema,
 )
 
-from terminusdb_client.woqlclient.woqlClient import WOQLClient
-
-import pprint as pp
-
-# from woql_schema import WOQLSchema, Document, Property, WOQLObject
-
 seshat_schema = WOQLSchema()
 
-# class MyObject(DocumentTemplate):
-#     _schema = my_schema
-#
-#
-# class MyDocument(DocumentTemplate):
-#     _schema = my_schema
+# first define ScopedValue classes and associated enums for Polity properties
 
-
-class GeneralVariables(DocumentTemplate):
-    _schema = seshat_schema
-    _subdocument = []
-    alternative_name: Set[str]
-    language: str
-
-
-class EpistemicState(EnumTemplate):
+# useful enums
+class enum_EpistemicState(EnumTemplate):
     _schema = seshat_schema
     absent = ()
     present = ()
-    unknown = ()
-    inferred_absent = ()
-    inferred_present = ()
 
-class AdministrativeLevels(EnumTemplate):
-    """levels: An example of hierarchy for a state society
-    could be (5) the overall ruler, (4) provincial/regional governors,
-    (3) district heads, (2) town mayors, (1) village heads.
-    Note that unlike in settlement hierarchy, here you code
-    people hierarchy.
-    Do not simply copy settlement hierarchy data here.
-    For archaeological polities, you will usually code as 'unknown',
-    unless experts identified ranks of chiefs or officials independently
-    of the settlement hierarchy.
-    Note: Often there are more than one concurrent administrative hierarchy.
-    In the example above the hierarchy refers to the territorial government.
-    In addition, the ruler may have a hierarchically organized central
-    bureaucracy located in the capital. For example, (4)the overall ruler,
-    (3) chiefs of various ministries, (2) mid-level bureaucrats,
-    (1) scribes and clerks.
-    In the narrative paragraph detail what is known about both hierarchies.
-    The machine-readable code should reflect the largest number
-    (the longer chain of command)."""
+# NOTE Gavin had admin levels as an enum with one,two,three, etc. as values
+# but we want them as integers constrained from 0 to 8-10 or so. JSB? How to do that?
 
+class enum_Confidence(EnumTemplate):
     _schema = seshat_schema
-    five = ()
-    four = ()
-    three = ()
-    two = ()
-    one = ()
-
-
-class HierarchicalComplexity(DocumentTemplate):
+    # JSB? Is this the way you declare xsd types of a property?
+    suspected = 'xsd:boolean' # is the value (typically unknown) provided by an RA versus an expert
+    disputed  = 'xsd:boolean' # is this one of several disputed values {}?
+    inferred  = 'xsd:boolean' # is the value inferred somehow?
+    
+class ScopedValue(DocumentTemplate):
     _schema = seshat_schema
+    unknown = 'xsd:boolean' # is the (typed) value explicitly unknown?
+     # JSB? is using Set[] the right way to do this?
+     # since we can have disputed and inferred at the same time I think so
+     # JSB? also is the syntax really using [] and not ()?  Does python parse that correctly?
+    confidence = Set[enum_Confidence]
+    dates = 'xsd:gYearRange' # dates to restrict the value to... e.g., Foo: 134BCE-200CE
+
+# Type mixins (boxed classes) for property ScopedValues
+# TODO verify capitalization of property names and types
+class EpistemicState(DocumentTemplate):
+    _schema = seshat_schema
+    EpistemicState: enum_EpistemicState
+
+class String(DocumentTemplate):
+    '''Any text or sequence of characters'''
+    _schema = seshat_schema
+    String: 'xsd:string' # or str?
+
+class Integer(DocumentTemplate):
+    '''A simple number'''
+    _schema = seshat_schema
+    Integer: 'xsd:integer'
+
+class IntegerRange(DocumentTemplate):
+    '''A simple number or range of integers'''
+    _schema = seshat_schema
+    IntegerRange: 'xsd:integerRange'
+
+class Decimal(DocumentTemplate):
+    '''A decimal number'''
+    _schema = seshat_schema
+    Decimal: 'xsd:decimal'
+
+class DecimalRange(DocumentTemplate):
+    '''A decimal number'''
+    _schema = seshat_schema
+    DecimalRange: 'xsd:decimalRange'
+
+class gYear(DocumentTemplate):
+    '''A particular Gregorian 4 digit year YYYY - negative years are BCE'''
+    _schema = seshat_schema
+    gYear: 'xsd:gYear'
+
+class gYearRange(DocumentTemplate):
+    '''A 4-digit Gregorian year, YYYY, or if uncertain, a range of years [YYYY,YYYY]'''
+    _schema = seshat_schema
+    gYearRange: 'xdd:gYearRange'
+
+
+# Define example topic Section/Subsection classes (no properties on these)
+class Topic(DocumentTemplate):
+    '''Root of topic hierarchy'''
+    _schema = seshat_schema
+    label = ''
     _subdocument = []
-    admin_levels: 'AdministrativeLevels'
 
-class SpecializedBuildingsPolityOwned(DocumentTemplate):
+class GeneralInfo(DocumentTemplate):
     _schema = seshat_schema
-    _subdocument = []
-    bridges: 'EpistemicState'
+    label = 'General information variables'
+    _subdocument = [Topic]
 
-
-class Information(DocumentTemplate):
+class SocialComplexity(DocumentTemplate):
     _schema = seshat_schema
-    _subdocument = []
-    articles: 'EpistemicState'
+    label = 'Social Complexity variables'
+    _subdocument = [Topic]
 
-class SocialComplexityVariables(DocumentTemplate):
+class Military(DocumentTemplate):
     _schema = seshat_schema
-    _subdocument = []
-    hierarchical_complexity: HierarchicalComplexity
-    specialized_buildings_polity_owned: Optional['SpecializedBuildingsPolityOwned']
-    information: Information
+    label = 'Miltiary variables'
+    _subdocument = [Topic]
 
-class MilitaryTechnologies(DocumentTemplate):
+class Politics(DocumentTemplate):
     _schema = seshat_schema
-    _subdocument = []
-    breastplates: 'EpistemicState'
-    atlatl: 'EpistemicState'
-    battle_axes: 'EpistemicState'
+    label = 'Political variables'
+    _subdocument = [Topic]
 
-class WarfareVariables(DocumentTemplate):
+# A subsection
+class Legal(DocumentTemplate):
     _schema = seshat_schema
-    _subdocument = []
-    military_technologies: MilitaryTechnologies
+    label = 'Legal system variables'
+    _subdocument = [Politics]
 
+
+# Define property scoped values that inherit from 'section' classes
+# NOTE: label will be used to parse from csv file strings to the proper class types
+# and for pretty display on the website 
+# JSB? How do we declare instances with random gensym for names?  How to specify/override @key?
+
+class PeakDate(DocumentTemplate): 
+    _schema = seshat_schema
+    label = 'Peak date'
+    # Format of _subdocument for each seshat property is ScopedValue, then a boxed type, then one or more Topics
+    _subdocument = [ScopedValue Date GeneralInfo]
+
+class Duration(DocumentTemplate): 
+    _schema = seshat_schema
+    label = 'Duration'
+    _subdocument = [ScopedValue YearRange GeneralInfo]
+
+class Territory(DocumentTemplate):
+    _schema = seshat_schema
+    label = 'Polity territory'
+    _subdocument = [ScopedValue DecimalRange SocialComplexity]
+
+class ProfessionalMilitary(DocumentTemplate): 
+    _schema = seshat_schema
+    label = 'Professional military'
+    # permits present/absent values
+    _subdocument = [ScopedValue EpistemicState Military]
+
+# TODO Need an example to inherit from Legal subsection
+
+# Define properties with a property scoped value or a Set[property scoped value] if uncertainty [] is allowed
 class Polity(DocumentTemplate):
     _schema = seshat_schema
-    name: str
-    general_variables: GeneralVariables
-    social_complexity_variables: SocialComplexityVariables
-    warfare_variables: WarfareVariables
-
-class Confidence(EnumTemplate):
-    _schema = seshat_schema
-    inferred = ()
-    suspected = ()
-
-section = GeneralVariables()
-section.language = "Latin"
-
-codebook = Polity()
-codebook.name = "Code book"
-codebook.general_variables = section
-
-print(codebook._obj_to_dict())
+    polid: str # the equivalent of 'label'?  JSB? Note use of str, not 'xsd:string'?
+    originalID: str # to compare with the old wiki polity page names
+    # in order to permit uncertain or disputed values with different dates all seshat properties are Set[]
+    peak_date: Set[PeakDate] # typically only one but could be disputed
+    duration: Set[Duration]
+    territory: Set[Territory]
+    professional_military: Set[ProfessionalMilitary]
 
 
-hierarch_complex = HierarchicalComplexity(admin_levels = AdministrativeLevels.five)
-info = Information(articles = EpistemicState.present)
-social_complex = SocialComplexityVariables(
-    hierarchical_complexity = hierarch_complex,
-    information=info
-)
-war_var = WarfareVariables(
-    military_technologies=MilitaryTechnologies(atlatl=EpistemicState.present,
-                                               battle_axes=EpistemicState.present,
-                                               breastplates=EpistemicState.present)
-)
-gen_var = GeneralVariables(alternative_name = ["Sadozai Kingdom", "Last Afghan Empire"])
-affdurrn = Polity(name="AfDurrn",
-                  social_complexity_variables=social_complex,
-                  general_variables=gen_var,
-                  warfare_variables=war_var)
-
-pp.pprint(affdurrn._obj_to_dict())
+# define an example instance from our powerpoint slide (slide 7)
+# in fact, we'll generate these by parsing the csv file and then constructing or updating a JSON object
+# so no use? of the Python constructors with arguments?
+# We will be building up a document instance 'patch' (or fetching and patching the whole instance)
+# Need to mock this up using our python dictionary scheme...
+# These are all instances of some ScopedValue class
+peak_date_1 = PeakDate(Date='1761') #string or integer?
+duration_1 = Duration(DateRange='[1741,1826]') #string or integer?
+territory_1 = Territory(DecimalRange='[60000,80000]',dates='1772')
+territory_2 = Territory(DecimalRange='[179000,490000]',dates='1800')
+professional_military_1 = ProfessionalMilitary(EpistemicState=enum_EpistemicState.present,inferred=True)
+# TODO other examples not on the slide:
+# disputed values with inferred
+# a suspected unknown
+afdurn = Polity(polid='af_durn',originalID='Afdurrn',
+                peak_date=[peak_date_1], # are the []'s required for singleton sets?
+                duration=[duration_1],
+                territory=[territory_1,territory_2], # NOTE alternative data values here
+                professional_military=[professional_military_1]
+                )
 
 
 client = WOQLClient("http://127.0.0.1:6363/")
 client.connect()
 
 exists = client.get_database("test_seshat")
-print(exists)
-
 if exists:
     client.delete_database("test_seshat")
-
-client.create_database("test_seshat")
-
-print(client._auth())
-stuff = seshat_schema.to_dict()
-pp.pprint(stuff)
+client.create_database("test_seshat") # reset the DB
+# Create the schema:
+seshat_schema_dict = seshat_schema.to_dict()
+pp.pprint(seshat_schema_dict) # report the internal form of the full schema
 try:
-    client.insert_document(seshat_schema.to_dict(),
-                           commit_msg="I am checking in the schema",
+    client.insert_document(seshat_schema_dict,
+                           commit_msg="Creating the schema",
                            graph_type="schema")
 except Exception as E:
     print(E.error_obj)
+    sys.exit(1)
 
+# Add a single instance
+pp.pprint(afdurrn.to_dict()) # report the internal form of the instance
+try:
+    client.insert_document(afdurn, commit_msg="Commit Afdurn", graph_type= "instance")
+except Exception as E:
+    print(E.error_obj)
+    sys.exit(2)
 
-client.insert_document(affdurrn, commit_msg="checking if it is working", graph_type= "instance")
 results = client.get_all_documents(graph_type="instance")
-print(list(results))
-
+sys.exit(0)
