@@ -20,8 +20,13 @@ class enum_EpistemicState(EnumTemplate):
 
 # NOTE Gavin had admin levels as an enum with one,two,three, etc. as values
 # but we want them as integers constrained from 0 to 8-10 or so. JSB? How to do that?
+# GMG shall we add facets?
+#GMG shall we provide a "xsd:nonNegativeInteger"? (this is where we are now -get JSB to confirm) 
+# GMG shall we use a carriage type for Enums to marshall it to the appropriate type? 
 
-class enum_Confidence(EnumTemplate):
+
+# that cannot be an Enum, it should be a TaggedUnion. Correct it. 
+class TaggedUnion_Confidence(TaggedUnion):
     _schema = seshat_schema
     # JSB? Is this the way you declare xsd types of a property?
     suspected = 'xsd:boolean' # is the value (typically unknown) provided by an RA versus an expert
@@ -34,39 +39,40 @@ class ScopedValue(DocumentTemplate):
      # JSB? is using Set[] the right way to do this?
      # since we can have disputed and inferred at the same time I think so
      # JSB? also is the syntax really using [] and not ()?  Does python parse that correctly?
-    confidence = Set[enum_Confidence]
+     # Ask JSB to elaborate on the comment above.
+    confidence = Set[TaggedUnion_Confidence]
     dates = 'xsd:gYearRange' # dates to restrict the value to... e.g., Foo: 134BCE-200CE
 
 # Type mixins (boxed classes) for property ScopedValues
 # TODO verify capitalization of property names and types
 class EpistemicState(DocumentTemplate):
     _schema = seshat_schema
-    EpistemicState: enum_EpistemicState
+    epistemic_state: enum_EpistemicState
 
 class String(DocumentTemplate):
     '''Any text or sequence of characters'''
     _schema = seshat_schema
-    String: 'xsd:string' # or str?
+    string: 'xsd:string' # or str?
 
 class Integer(DocumentTemplate):
     '''A simple number'''
     _schema = seshat_schema
-    Integer: 'xsd:integer'
+    integer: 'xsd:integer'
 
 class IntegerRange(DocumentTemplate):
     '''A simple number or range of integers'''
     _schema = seshat_schema
-    IntegerRange: 'xsd:integerRange'
+    integer_range: 'xsd:integerRange'
 
 class Decimal(DocumentTemplate):
     '''A decimal number'''
     _schema = seshat_schema
-    Decimal: 'xsd:decimal'
+    decimal: 'xsd:decimal'
 
 class DecimalRange(DocumentTemplate):
     '''A decimal number'''
     _schema = seshat_schema
-    DecimalRange: 'xsd:decimalRange'
+    decimal_range: 'xsd:decimalRange'
 
 class gYear(DocumentTemplate):
     '''A particular Gregorian 4 digit year YYYY - negative years are BCE'''
@@ -82,67 +88,69 @@ class gYearRange(DocumentTemplate):
 # Define example topic Section/Subsection classes (no properties on these)
 class Topic(DocumentTemplate):
     '''Root of topic hierarchy'''
+    
     _schema = seshat_schema
-    label = ''
-    _subdocument = []
+    _abstract = []
 
-class GeneralInfo(DocumentTemplate):
-    _schema = seshat_schema
-    label = 'General information variables'
-    _subdocument = [Topic]
+class GeneralInfo(Topic):
+    '''General information variables'''
+     _schema = seshat_schema
+    _abstract = []
 
-class SocialComplexity(DocumentTemplate):
+class SocialComplexity(Topic):
+    '''Social Complexity variables'''
     _schema = seshat_schema
-    label = 'Social Complexity variables'
-    _subdocument = [Topic]
+    _abstract = []
 
-class Military(DocumentTemplate):
-    _schema = seshat_schema
-    label = 'Miltiary variables'
-    _subdocument = [Topic]
+class Military(Topic):
+   '''Miltiary variables'''
+   _schema = seshat_schema
+   _abstract = []
 
-class Politics(DocumentTemplate):
+class Politics(Topic):
+    '''Political variables'''
     _schema = seshat_schema
-    label = 'Political variables'
-    _subdocument = [Topic]
+     _abstract = [] 
 
 # A subsection
 class Legal(DocumentTemplate):
+    '''Legal system variables'''
     _schema = seshat_schema
-    label = 'Legal system variables'
-    _subdocument = [Politics]
+    _abstract = []
 
-
-# Define property scoped values that inherit from 'section' classes
 # NOTE: label will be used to parse from csv file strings to the proper class types
 # and for pretty display on the website 
 # JSB? How do we declare instances with random gensym for names?  How to specify/override @key?
 
-class PeakDate(DocumentTemplate): 
+class PeakDate(ScopedValue, Date, GeneralInfo): 
     _schema = seshat_schema
     label = 'Peak date'
     # Format of _subdocument for each seshat property is ScopedValue, then a boxed type, then one or more Topics
-    _subdocument = [ScopedValue Date GeneralInfo]
+    _subdocument = []
 
-class Duration(DocumentTemplate): 
+class Duration(ScopedValue, YearRange, GeneralInfo): 
     _schema = seshat_schema
     label = 'Duration'
-    _subdocument = [ScopedValue YearRange GeneralInfo]
+    _subdocument = []
 
-class Territory(DocumentTemplate):
+# DGP edit Duration, Territory etc as PeakDate above
+class Territory(ScopedValue, DecimalRange, SocialComplexity):
     _schema = seshat_schema
     label = 'Polity territory'
-    _subdocument = [ScopedValue DecimalRange SocialComplexity]
+    _subdocument = []
 
-class ProfessionalMilitary(DocumentTemplate): 
+class ProfessionalMilitary(ScopedValue, EpistemicState, Military): 
     _schema = seshat_schema
     label = 'Professional military'
     # permits present/absent values
-    _subdocument = [ScopedValue EpistemicState Military]
+    _subdocument = []
 
 # TODO Need an example to inherit from Legal subsection
 
 # Define properties with a property scoped value or a Set[property scoped value] if uncertainty [] is allowed
+# marshall values back and forth?
+# tuple of Year elements e.g. range 
+
 class Polity(DocumentTemplate):
     _schema = seshat_schema
     polid: str # the equivalent of 'label'?  JSB? Note use of str, not 'xsd:string'?
