@@ -3,19 +3,22 @@ from terminusdb_client.woqlschema.woql_schema import (
     DocumentTemplate,
     EnumTemplate,
     HashKey,
-    TaggedUnion, # an 'enum'
+    TaggedUnion,
     WOQLSchema,
 )
+
 
 seshat_schema = WOQLSchema()
 # first define ScopedValue classes and associated enums for Polity properties
 # useful enums
-# added random comment to test commit
+
 class enum_EpistemicState(EnumTemplate):
     _schema = seshat_schema
     absent = ()
     present = ()
+
 # Type mixins (boxed classes) for property ScopedValues
+# is he using mixin to avoid inheritance ambiguity?
 # TODO verify capitalization of property names and types
 # Define the boxed types as a TaggedUnion
 
@@ -35,9 +38,13 @@ class BoxedType(TaggedUnion):
 # JSB? By inheriting the BoxedType TaggedUnion with all the other properties declared here
 # does the system ensure there will be only one of the 'typed' properties asserted on any particular instance of ScopedValue?
 
-class ScopedValue(DocumentTemplate, BoxedType):
+# DGP: in order to inherit from a TaggedUnion I need to add a disjoint process in the system. Do I really need that? Justify.
+
+class ScopedValue(DocumentTemplate):
     _schema = seshat_schema
-    dates = 'xsd:gYearRange' # dates to restrict the value to... e.g., Foo: 134BCE-200CE
+    dates: 'BoxedType' # dates to restrict the value to... e.g., Foo: 134BCE-200CE
+    # DGP: No need to call BoxedType as class inheritance. We can call values such as "dates"
+    # e.g. above, from the BoxedType class.
     # Confidence qualifiers
     # Semantics: if unknown is True then there will/must be no value set on the BoxedType tagged union
     # If unknown is True, suspected could be set True if it was supplied by an RA
@@ -132,6 +139,7 @@ class ProfessionalMilitary(ScopedValue, Military):
 class Administrative_level(ScopedValue, Politics):
     _schema = seshat_schema
     label = 'Administrative level'
+    admin_level = Set['xsd:NonNegativeInteger']
     _subdocument = []
 
 # TODO Need an example to inherit from Legal subsection
