@@ -10,6 +10,7 @@ from terminusdb_client.woqlschema.woql_schema import (
 seshat_schema = WOQLSchema()
 # first define ScopedValue classes and associated enums for Polity properties
 # useful enums
+# added random comment to test commit
 class enum_EpistemicState(EnumTemplate):
     _schema = seshat_schema
     absent = ()
