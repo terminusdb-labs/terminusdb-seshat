@@ -1,4 +1,5 @@
 from typing import List, Optional, Set
+
 from terminusdb_client.woqlschema.woql_schema import (
     DocumentTemplate,
     EnumTemplate,
@@ -7,6 +8,10 @@ from terminusdb_client.woqlschema.woql_schema import (
     WOQLSchema,
 )
 
+from terminusdb_client.woqlclient.woqlClient import WOQLClient
+
+import pprint as pp
+import sys
 
 seshat_schema = WOQLSchema()
 # first define ScopedValue classes and associated enums for Polity properties
@@ -22,6 +27,7 @@ class enum_EpistemicState(EnumTemplate):
 # TODO verify capitalization of property names and types
 # Define the boxed types as a TaggedUnion
 
+
 class BoxedType(TaggedUnion):
     _schema = seshat_schema
     epistemic_state: enum_EpistemicState
@@ -32,7 +38,7 @@ class BoxedType(TaggedUnion):
     decimal_range: 'xsd:decimalRange' # A decimal number or a range of decimals
     gYear: 'xsd:gYear' # A particular Gregorian 4 digit year YYYY - negative years are BCE
     gYearRange: 'xdd:gYearRange' # A 4-digit Gregorian year, YYYY, or if uncertain, a range of years [YYYY,YYYY]
-    nonNegativeInteger: "xsd:nonNegativeInteger" # A simple number greater than 0.
+    nonNegativeInteger: 'xsd:nonNegativeInteger' # A simple number greater than 0.
 
 # ... define all the rest of the types from boxed_basic_types list
 # JSB? By inheriting the BoxedType TaggedUnion with all the other properties declared here
@@ -42,8 +48,7 @@ class BoxedType(TaggedUnion):
 
 class ScopedValue(DocumentTemplate):
     _schema = seshat_schema
-    dates: 'BoxedType' # dates to restrict the value to... e.g., Foo: 134BCE-200CE
-    # DGP: No need to call BoxedType as class inheritance. We can call values such as "dates"
+    dates= 'xsd:YearRange' # dates to restrict the value to... e.g., Foo: 134BCE-200CE
     # e.g. above, from the BoxedType class.
     # Confidence qualifiers
     # Semantics: if unknown is True then there will/must be no value set on the BoxedType tagged union
@@ -97,41 +102,41 @@ class Legal(Politics): # Inherit from Politics as a subsection, not DocumentTemp
 # and for pretty display on the website
 
 # JSB? How do we declare instances with random gensym for names?  How to specify/override @key?
-# Note: our look-aside dicts would maintain information that the 'Peak data' Variable from a csv file
+# DGP: if the gensym is used to replace the key is it assigned externally? Do we need to have
+# a gensym generator where the key is a random gensym? Do I get the question above right?
 
-# would map to the 'peak_date' property on a Polity
+# Note: our look-aside dicts would maintain information that the 'Peak data' Variable from a csv file would map to the 'peak_date' property on a Polity
 # and that its BoxedType property (on the ScopedValue value instance) is gYearRange
 # which requires a (possibly reformed) ValueTo csv string that can be cast to a 'xdd:gYearRange'
+#DGP: we can have a pre-processing script tht does that-is this the scope of this exercise? If yes should it be included here?
 
-class PeakDate(ScopedValue, GeneralInfo):
+
+class PeakDate(DocumentTemplate):
     _schema = seshat_schema
     label = 'Peak date'
-
     # Format of _subdocument for each seshat property is ScopedValue, then a boxed type, then one or more Topics
-    _subdocument = []
+    _subdocument = [ScopedValue,BoxedType, GeneralInfo]
 
 
-class Duration(ScopedValue, GeneralInfo):
-
+class Duration(DocumentTemplate):
     _schema = seshat_schema
     label = 'Duration'
-    _subdocument = []
+    _subdocument = [ScopedValue, BoxedType, GeneralInfo]
 
 
-# DGP edit Duration, Territory etc as PeakDate above
 
-
-class Territory(ScopedValue, SocialComplexity):
+class Territory(DocumentTemplate):
     _schema = seshat_schema
     label = 'Polity territory'
-    _subdocument = []
+    _subdocument = [ScopedValue, BoxedType, SocialComplexity]
 
 
-class ProfessionalMilitary(ScopedValue, Military):
+class ProfessionalMilitary(DocumentTemplate):
 
     _schema = seshat_schema
     label = 'Professional military'
-    _subdocument = []
+    _subdocument = [ScopedValue, BoxedType, Military]
+    epist_state: 'enum_EpistemicState'
 
 
 # Note singleton name
@@ -139,7 +144,7 @@ class ProfessionalMilitary(ScopedValue, Military):
 class Administrative_level(ScopedValue, Politics):
     _schema = seshat_schema
     label = 'Administrative level'
-    admin_level = Set['xsd:NonNegativeInteger']
+    admin_level = Set[ScopedValue]
     _subdocument = []
 
 # TODO Need an example to inherit from Legal subsection
@@ -158,7 +163,7 @@ class Polity(DocumentTemplate):
     duration: Set[Duration]
     territory: Set[Territory]
     professional_military: Set[ProfessionalMilitary]
-    administrative_level: Set[Administrative_levels]
+    administrative_level: Set[Administrative_level]
 
 
 
@@ -170,69 +175,94 @@ class Polity(DocumentTemplate):
 # These are all instances of some ScopedValue class
 
 
-peak_date_1 = PeakDate(Date='1761') #string or integer?
+
+### Example
+
+#fist lets see how the peak_date behaves. It needs to be an integer or a set.
+
+#peak_date_1 = PeakDate(Date='1761')
+# peak_date_1 = '1761' #string or integer? Either- you are looking at a TaggedUnion
+# which includes all the definitions
+
+# PeakDate.peak_date = 1761 #Integer
+# it also needs to be a set...
+
+#PeakDate.peak_date = [1761, 1236] #Set
+
+# It also works when it is a string.
+PeakDate.peak_date = '1761'
+# PeakDate.peak_date = ['1761', '1236']
+
+# Now, I want to see how the duration behaves.
+# the questions are the same as above (I think)
+
 # e.g., 1741-1826CE
-duration_1 = Duration(DateRange='[1741,1826]') #string or integer?
+#duration_1 = Duration(DateRange='[1741,1826]') #string or integer?
+# Either- you are looking at a TaggedUnion which includes all the definitions
+Duration.duration = '[1741,1826]'
+
+#Let's look at the territory
+
 # e.g., [60000,80000]:1772; [179000,490000]:1800
-territory_1 = Territory(DecimalRange='[60000,80000]',dates='1772')
-territory_2 = Territory(DecimalRange='[179000,490000]',dates='1800')
+# it seems like i need to construct a set like:[[60000,80000]:1772; [179000,490000]:1800]
+# rdfs:range[xsd:Decimal]:xsd:gYear
+# it looks like i need to construct classes to parse the definitions
+# in the BoxedType class.
+
+Territory.range1 = '[60000,80000]:1772'
+Territory.range2 = '[179000,490000]:1800'
+
+# territory_1 = Territory(DecimalRange='[60000,80000]',dates='1772'
+# territory_2 = Territory(DecimalRange='[179000,490000]',dates='1800')
+
+# Now let's look at the military
 
 
-# e.g., inferred present
+section = ScopedValue()
+section.inferred=True
+professional_military_1 = ProfessionalMilitary(epist_state = enum_EpistemicState.present,
+                                               inferred=True)
+
+# I don't know why inferred does not print. At this stage I have concluded
+# that i need to re-write in more detail the BoxedType and ScopedValue classes.
+
+# Administrative levels
 
 
-professional_military_1 = ProfessionalMilitary(EpistemicState=enum_EpistemicState.present,inferred=True)
-# a made up example to test disputed,
-
-
-# e.g, {4:1800; 5:1800}
-
-
-adm_level1 = Administrative_level(nonNegativeInteger='4',dates='1800',disputed=True)
-adm_level2 = Administrative_level(nonNegativeInteger='5',dates='1800',disputed=True)
 afdurn = Polity(polid='af_durn',originalID='Afdurrn',
-                peak_date=[peak_date_1], # are the []'s required for singleton sets?
-                duration=[duration_1],
-                territory=[territory_1,territory_2], # NOTE alternative data values here
-                professional_military=[professional_military_1],
-                administrative_level=[adm_level1,adm_level2] # NOTE a set of disputed values
+                 peak_date=PeakDate.peak_date, duration=Duration.duration,
+                territory=[Territory.range1, Territory.range2],
+                professional_military=professional_military_1
                 )
+
+pp.pprint(afdurn._obj_to_dict())
+
 
 
 client = WOQLClient("http://127.0.0.1:6363/")
 client.connect()
 
-
 exists = client.get_database("test_seshat")
+print(exists)
+
 if exists:
     client.delete_database("test_seshat")
-client.create_database("test_seshat") # reset the DB
 
-# Create the schema:
-seshat_schema_dict = seshat_schema.to_dict()
+client.create_database("test_seshat")
 
-pp.pprint(seshat_schema_dict) # report the internal form of the full schema
-
+print(client._auth())
+stuff = seshat_schema.to_dict()
+pp.pprint(stuff)
 try:
-    client.insert_document(seshat_schema_dict,
-                           commit_msg="Creating the schema",
+    client.insert_document(seshat_schema.to_dict(),
+                           commit_msg="I am checking in the schema",
                            graph_type="schema")
 except Exception as E:
     print(E.error_obj)
-    sys.exit(1)
 
 
-# Add a single instance
-
-pp.pprint(afdurrn.to_dict()) # report the internal form of the instance
-
-try:
-    client.insert_document(afdurn, commit_msg="Commit Afdurn", graph_type= "instance")
-
-except Exception as E:
-    print(E.error_obj)
-    sys.exit(2)
-
+client.insert_document(affdurrn, commit_msg="checking if it is working", graph_type= "instance")
 results = client.get_all_documents(graph_type="instance")
-sys.exit(0)
+print(list(results))
+
 
