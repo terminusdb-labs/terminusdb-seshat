@@ -9,9 +9,10 @@ from terminusdb_client.woqlschema.woql_schema import (
 )
 
 from terminusdb_client.woqlclient.woqlClient import WOQLClient
-
+from decimal import Decimal
 import pprint as pp
 import sys
+
 
 seshat_schema = WOQLSchema()
 # first define ScopedValue classes and associated enums for Polity properties
@@ -27,24 +28,31 @@ class enum_EpistemicState(EnumTemplate):
 # TODO verify capitalization of property names and types
 # Define the boxed types as a TaggedUnion
 
+class IntegerRange(DocumentTemplate):
+    _schema = seshat_schema
+    from_int: int
+    to_int: int
 
-class BoxedType(TaggedUnion):
+#i am not sure if i need decimals, can i use a float instead?
+
+class DecimalRange(DocumentTemplate):
+    _schema = seshat_schema
+    from_float: float
+    to_float: float
+
+class BoxedType(TaggedUnion):#remove TaggedUnion
     _schema = seshat_schema
     epistemic_state: enum_EpistemicState
-    string: 'xsd:string' # or str? Any text or sequence of characters
-    integer: 'xsd:integer' # A simple number
-    integer_range: 'xsd:integerRange'  # A simple number or range of integer
-    decimal: 'xsd:decimal' # A decimal number
-    decimal_range: 'xsd:decimalRange' # A decimal number or a range of decimals
+    string: str  # or str? Any text or sequence of characters
+    integer: int  # A simple number
+    integer_range: 'IntegerRange'  # A simple number or range of integer
+    # decimal: 'Decimal' # A decimal number
+    decimal: float
+    decimal_range: 'DecimalRange' # A decimal number or a range of decimals
     gYear: 'xsd:gYear' # A particular Gregorian 4 digit year YYYY - negative years are BCE
     gYearRange: 'xdd:gYearRange' # A 4-digit Gregorian year, YYYY, or if uncertain, a range of years [YYYY,YYYY]
     nonNegativeInteger: 'xsd:nonNegativeInteger' # A simple number greater than 0.
 
-# ... define all the rest of the types from boxed_basic_types list
-# JSB? By inheriting the BoxedType TaggedUnion with all the other properties declared here
-# does the system ensure there will be only one of the 'typed' properties asserted on any particular instance of ScopedValue?
-
-# DGP: in order to inherit from a TaggedUnion I need to add a disjoint process in the system. Do I really need that? Justify.
 
 class ScopedValue(DocumentTemplate):
     _schema = seshat_schema
@@ -115,27 +123,27 @@ class PeakDate(DocumentTemplate):
     _schema = seshat_schema
     label = 'Peak date'
     # Format of _subdocument for each seshat property is ScopedValue, then a boxed type, then one or more Topics
-    _subdocument = [ScopedValue,BoxedType, GeneralInfo]
-
+    _subdocument = [ScopedValue, GeneralInfo]
+    #peak_date: DecimalNumber
 
 class Duration(DocumentTemplate):
     _schema = seshat_schema
     label = 'Duration'
-    _subdocument = [ScopedValue, BoxedType, GeneralInfo]
+   # _subdocument = [ScopedValue, BoxedType, GeneralInfo]
 
 
 
 class Territory(DocumentTemplate):
     _schema = seshat_schema
     label = 'Polity territory'
-    _subdocument = [ScopedValue, BoxedType, SocialComplexity]
+    #_subdocument = [ScopedValue, BoxedType, SocialComplexity]
 
 
 class ProfessionalMilitary(DocumentTemplate):
 
     _schema = seshat_schema
     label = 'Professional military'
-    _subdocument = [ScopedValue, BoxedType, Military]
+    #_subdocument = [ScopedValue, BoxedType, Military]
     epist_state: 'enum_EpistemicState'
 
 
@@ -190,7 +198,8 @@ class Polity(DocumentTemplate):
 #PeakDate.peak_date = [1761, 1236] #Set
 
 # It also works when it is a string.
-PeakDate.peak_date = '1761'
+PeakDate.peak_date =123
+print(PeakDate.peak_date)
 # PeakDate.peak_date = ['1761', '1236']
 
 # Now, I want to see how the duration behaves.
@@ -239,30 +248,30 @@ pp.pprint(afdurn._obj_to_dict())
 
 
 
-client = WOQLClient("http://127.0.0.1:6363/")
-client.connect()
+# client = WOQLClient("http://127.0.0.1:6363/")
+# client.connect()
 
-exists = client.get_database("test_seshat")
-print(exists)
+# exists = client.get_database("test_seshat")
+# print(exists)
 
-if exists:
-    client.delete_database("test_seshat")
+# if exists:
+#     client.delete_database("test_seshat")
 
-client.create_database("test_seshat")
+# client.create_database("test_seshat")
 
-print(client._auth())
-stuff = seshat_schema.to_dict()
-pp.pprint(stuff)
-try:
-    client.insert_document(seshat_schema.to_dict(),
-                           commit_msg="I am checking in the schema",
-                           graph_type="schema")
-except Exception as E:
-    print(E.error_obj)
+# print(client._auth())
+# stuff = seshat_schema.to_dict()
+# pp.pprint(stuff)
+# try:
+#     client.insert_document(seshat_schema.to_dict(),
+#                            commit_msg="I am checking in the schema",
+#                            graph_type="schema")
+# except Exception as E:
+#     print(E.error_obj)
 
 
-client.insert_document(affdurrn, commit_msg="checking if it is working", graph_type= "instance")
-results = client.get_all_documents(graph_type="instance")
-print(list(results))
+# client.insert_document(affdurrn, commit_msg="checking if it is working", graph_type= "instance")
+# results = client.get_all_documents(graph_type="instance")
+# print(list(results))
 
 
