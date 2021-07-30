@@ -3,6 +3,8 @@ from terminusdb_client.woqlschema.woql_schema import (
     DocumentTemplate,
     EnumTemplate,
     HashKey,
+    RandomKey,
+    LexicalKey,
     TaggedUnion, # a disjunction
     WOQLSchema,
 )
@@ -106,8 +108,12 @@ class Legal(Politics): # Inherit from Politics as a subsection, not DocumentTemp
 # which requires a (possibly reformed) ValueTo csv string that can be cast to a 'xdd:gYearRange'
 
 class PeakDate(DocumentTemplate):
+    '''Peak date
+
+    attribute
+    ======================
+    peak_date: integer'''
     _schema = seshat_schema
-    label = 'Peak date'
     # Format of _subdocument for each seshat property is ScopedValue, then a boxed type, then one or more Topics
     _subdocument = []
     peak_date: int
@@ -136,6 +142,7 @@ class AdministrativeLevelValue(Politics):
     _schema = seshat_schema
     label = 'Administrative level'
     _subdocument = []
+    _key = RandomKey
     dates: 'GYear'
     disputed: 'ScopedValue'
     value: int
@@ -164,7 +171,9 @@ class ProfessionalMilitary(DocumentTemplate):
 
 class Polity(DocumentTemplate):
     _schema = seshat_schema
+    _key = LexicalKey("polid")
     polid: str # the equivalent of 'label'?  JSB? Note use of str, not 'xsd:string'?
+    # _key = LexicalKey(["polid"])
     originalID: str # to compare with the old wiki polity page names
     # in order to permit uncertain or disputed values with different dates all seshat properties are Set[]
     peak_date:'PeakDate' # typically only one but could be disputed
