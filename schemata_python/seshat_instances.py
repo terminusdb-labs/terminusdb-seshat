@@ -118,21 +118,21 @@ class Duration(ScopedValue, GeneralInfo):
     _subdocument = []
     duration: 'GYearRange'
 
-class Territory(SocialComplexity):
+class TerritoryValue(SocialComplexity):
     _schema = seshat_schema
     label = 'Polity territory'
     _subdocument = []
     territory_range: DecimalRange
     territory_date:' ScopedValue'
 
-class ProfessionalMilitary(Military):
+class ProfessionalMilitaryValue(Military):
     _schema = seshat_schema
     label = 'Professional military'
     _subdocument = []
     epistemic_state: 'EpistemicState'
     scope: 'ScopedValue'
 
-class AdministrativeLevel(Politics):
+class AdministrativeLevelValue(Politics):
     _schema = seshat_schema
     label = 'Administrative level'
     _subdocument = []
@@ -140,19 +140,22 @@ class AdministrativeLevel(Politics):
     disputed: 'ScopedValue'
     value: int
 
-class DisputedValuesTerritory(DocumentTemplate):
+class Territory(DocumentTemplate):
     _schema = seshat_schema
     _subdocument = []
-    territory_1: 'Territory'
-    territory_2: Optional['Territory']
-    territory_3: Optional['Territory']
+    territory: List['TerritoryValue']
 
-class DisputedValuesAdmin(DocumentTemplate):
+class AdministrativeLevels(DocumentTemplate):
     _schema = seshat_schema
     _subdocument = []
-    admin_1: 'AdministrativeLevel'
-    admin_2: Optional['AdministrativeLevel']
-    admin_3: Optional['AdministrativeLevel']
+    administrative_levels: List['AdministrativeLevelValue']
+
+# is professional military likely to have more than one values?
+# if not there is no need for a list.
+class ProfessionalMilitary(DocumentTemplate):
+    _schema = seshat_schema
+    _subdocument = []
+    administrative_levels: List['ProfessionalMilitaryValue']
 
 # TODO Need an example to inherit from Legal subsection
 # Define properties with a property scoped value or a Set[property scoped value] if uncertainty [] is allowed
@@ -168,9 +171,7 @@ class Polity(DocumentTemplate):
     duration: 'Duration'
     territory: 'Territory'
     professional_military: 'ProfessionalMilitary'
-    administrative_level: 'Administrative_level'
-    disputed_territory_values: 'DisputedValuesTerritory'
-    disputed_admin_level_values: 'DisputedValuesAdmin'
+    admin_levels: 'AdministrativeLevels'
 
 
 
@@ -187,38 +188,41 @@ p_d.peak_date = 1761
 dur = Duration()
 dur.duration = [1741,1826]
 
-territory_1 = Territory(territory_range=[60000,80000], territory_date=1772)
-territory_2 = Territory(territory_range=[179000,490000], territory_date=1800)
+territory_1 = TerritoryValue()
+territory_1.territory_range = [60000,80000]
+territory_1.territory_date = 1772
 
-disputed_territory = DisputedValuesTerritory()
-disputed_territory.territory_1 = territory_1
-disputed_territory.territory_2 = territory_2
+territory_2 = TerritoryValue()
+territory_2.territory_range = [179000,490000]
+territory_2.territory_date = 1800
+
+territory_list = Territory()
+territory_list.territory = [territory_1, territory_2]
 
 
 section = ScopedValue().inferred
 section = True
 
-professional_military_1 = ProfessionalMilitary(epistemic_state=EpistemicState.present,
+professional_military_1 = ProfessionalMilitaryValue(epistemic_state=EpistemicState.present,
                                                scope=section)
 
-adm_scoped_dispute_1 = ScopedValue().disputed
-adm_scoped_dispute_1 = True
-adm_level1 = AdministrativeLevel(value=4, dates=1800, disputed=adm_scoped_dispute_1)
+professional_military_list = [professional_military_1]
 
-adm_scoped_dispute_2 = ScopedValue().disputed
-adm_scoped_dispute_2 = True
-adm_level2 = AdministrativeLevel(value=5, dates=1800, disputed=adm_scoped_dispute_1)
+adm_scoped_dispute_true = ScopedValue().disputed
+adm_scoped_dispute_true = True
 
-disputed_admin_level = DisputedValuesAdmin()
-disputed_admin_level.admin_1 = adm_level1
-disputed_admin_level.admin_2 = adm_level2
+adm_level1 = AdministrativeLevelValue(value=4, dates=1800, disputed=adm_scoped_dispute_true)
+adm_level2 = AdministrativeLevelValue(value=5, dates=1800, disputed=adm_scoped_dispute_true)
+
+admin_level_list = AdministrativeLevels()
+admin_level_list.administrative_levels = [adm_level1, adm_level2]
 
 
 afdurn = Polity(polid='af_durn',originalID='Afdurrn',
                 peak_date=p_d, duration=dur,
-                disputed_territory_values=disputed_territory,
+                territory=territory_list,
                 professional_military=professional_military_1,
-                disputed_admin_level_values = disputed_admin_level)
+                admin_levels = admin_level_list)
 
 pp.pprint(afdurn._obj_to_dict())
 
