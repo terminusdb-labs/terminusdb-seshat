@@ -1,4 +1,3 @@
 # terminusdb-seshat
-seshat schemata developed using terminusdb clients
-
+Support for sheshat
 The folder 'schemata_python' contains the schemata developed using python scaffolding. 
