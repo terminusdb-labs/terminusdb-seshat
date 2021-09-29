@@ -2,6 +2,7 @@ from terminusdb_client.woqlschema import WOQLSchema, DocumentTemplate, LexicalKe
 from terminusdb_client import WOQLClient
 from typing import List, Optional, Set
 from enum import Enum
+import pprint as pp
 
 
 user = "dani"
@@ -61,7 +62,7 @@ class Boolean(Enum):
 
 class ScopedValue(DocumentTemplate):
     _schema = seshat_schema
-    dates: 'GYearRange'  # dates to restrict the value to... e.g., Foo: 134BCE-200CE
+    dates: Optional['GYearRange']  # dates to restrict the value to... e.g., Foo: 134BCE-200CE
     # Confidence qualifiers
     # Semantics: if unknown is True then there will/must be no value set on the BoxedType tagged union
     # If unknown is True, suspected could be set True if it was supplied by an RA
@@ -70,11 +71,11 @@ class ScopedValue(DocumentTemplate):
     # 1) no unknown or suspected property,
     # 2) one of the BoxedType properties
     # 3) optionally one or both of disputed or inferred set
-    unknown:  bool  # is the (typed) value explicitly unknown?
+    unknown: Optional[bool]  # is the (typed) value explicitly unknown?
     # is the value (typically unknown) provided by an RA versus an expert
-    suspected: bool
-    disputed: bool  # is this one of several disputed values {}?
-    inferred: bool  # is the value inferred somehow?
+    suspected: Optional[bool]
+    disputed: Optional[bool]  # is this one of several disputed values {}?
+    inferred: Optional[bool]  # is the value inferred somehow?
 # Type mixins (boxed classes) for property ScopedValues
 # TODO verify capitalization of property names and types
 
@@ -167,7 +168,7 @@ class AdministrativeLevelValue(Politics):
     label = 'Administrative level'
     _subdocument = []
     _key = RandomKey
-    dates: 'GYear'
+    dates: 'GYearRange'
     disputed: 'ScopedValue'
     value: int
 
@@ -217,36 +218,40 @@ seshat_schema.commit(client, commit_msg="Adding Schema")
 p_d = PeakDate()
 p_d.peak_date = 1761
 
+dur_range = GYearRange()
+dur_range.g_year_range = {1741, 1826}
 dur = Duration()
-dur.duration = [1741, 1826]
+dur.duration = dur_range
+
 
 territory_1 = TerritoryValue()
-territory_1.territory_range = [6000, 8000]
-territory_1.territory_date = 1772
+territory_1.territory_range = DecimalRange(decimal_range={6000, 8000})
+territory_1.territory_date = ScopedValue(
+    date=GYearRange(g_year_range={1772, }))
 
 territory_2 = TerritoryValue()
-territory_2.territory_range = [17900, 49000]
-territory_2.territory_date = 1800
+territory_2.territory_range = DecimalRange(decimal_range={17900, 49000})
+territory_2.territory_date = ScopedValue(
+    date=GYearRange(g_year_range={1800, }))
 
 territory_list = Territory()
 territory_list.territory = [territory_1, territory_2]
 
-
-section = ScopedValue().inferred
-section = True
+section = ScopedValue()
+section.inferred = True
 
 professional_military_1 = ProfessionalMilitaryValue(epistemic_state=EpistemicState.present,
                                                     scope=section)
 
 professional_military_list = [professional_military_1]
 
-adm_scoped_dispute_true = ScopedValue().disputed
-adm_scoped_dispute_true = True
+adm_scoped_dispute_true = ScopedValue()
+adm_scoped_dispute_true.disputed = True
 
 adm_level1 = AdministrativeLevelValue(
-    value=4, dates=1800, disputed=adm_scoped_dispute_true)
+    value=4, dates=[GYearRange(g_year_range={1800, })], disputed = adm_scoped_dispute_true)
 adm_level2 = AdministrativeLevelValue(
-    value=5, dates=1800, disputed=adm_scoped_dispute_true)
+    value=5, dates=GYearRange(g_year_range={1800, }), disputed=adm_scoped_dispute_true)
 
 admin_level_list = AdministrativeLevels()
 admin_level_list.administrative_levels = [adm_level1, adm_level2]
@@ -257,5 +262,6 @@ afdurn = Polity(polid='af_durn', originalID='Afdurrn',
                 territory=territory_list,
                 professional_military=professional_military_1,
                 admin_levels=admin_level_list)
-afdurn._id
+pp.pprint(afdurn._obj_to_dict())
+
 client.insert_document(afdurn, commit_msg=f"Inserting data")
