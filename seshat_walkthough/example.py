@@ -40,6 +40,7 @@ class IntegerRange(DocumentTemplate):
 class DecimalRange(DocumentTemplate):
     '''Decimal number range'''
     _schema = seshat_schema
+    _subdocument = []
     decimal_range: Set[float]
 
 
@@ -52,6 +53,7 @@ class GYear(DocumentTemplate):
 class GYearRange(DocumentTemplate):
     '''A 4-digit Gregorian year, YYYY, or if uncertain, a range of years [YYYY,YYYY]'''
     _schema = seshat_schema
+    _subdocument = []
     g_year_range: Set[int]
 
 
@@ -62,6 +64,7 @@ class Boolean(Enum):
 
 class ScopedValue(DocumentTemplate):
     _schema = seshat_schema
+    _subdocument = []
     dates: Optional['GYearRange']  # dates to restrict the value to... e.g., Foo: 134BCE-200CE
     # Confidence qualifiers
     # Semantics: if unknown is True then there will/must be no value set on the BoxedType tagged union
@@ -157,6 +160,7 @@ class TerritoryValue(SocialComplexity):
 
 class ProfessionalMilitaryValue(Military):
     _schema = seshat_schema
+    _subdocument = []
     label = 'Professional military'
     _subdocument = []
     epistemic_state: 'EpistemicState'
@@ -221,7 +225,7 @@ p_d.peak_date = 1761
 dur_range = GYearRange()
 dur_range.g_year_range = {1741, 1826}
 dur = Duration()
-dur.duration = dur_range
+dur.duration = dur_range#.g_year_range
 
 
 territory_1 = TerritoryValue()
@@ -243,24 +247,24 @@ section.inferred = True
 professional_military_1 = ProfessionalMilitaryValue(epistemic_state=EpistemicState.present,
                                                     scope=section)
 
-professional_military_list = [professional_military_1]
+professional_military_list = ProfessionalMilitary(
+    administrative_levels=[professional_military_1])
 
 adm_scoped_dispute_true = ScopedValue()
 adm_scoped_dispute_true.disputed = True
 
 adm_level1 = AdministrativeLevelValue(
-    value=4, dates=[GYearRange(g_year_range={1800, })], disputed = adm_scoped_dispute_true)
+    value=4, dates=GYearRange(g_year_range={1800, }), disputed=adm_scoped_dispute_true)
 adm_level2 = AdministrativeLevelValue(
     value=5, dates=GYearRange(g_year_range={1800, }), disputed=adm_scoped_dispute_true)
 
 admin_level_list = AdministrativeLevels()
 admin_level_list.administrative_levels = [adm_level1, adm_level2]
 
-
 afdurn = Polity(polid='af_durn', originalID='Afdurrn',
                 peak_date=p_d, duration=dur,
                 territory=territory_list,
-                professional_military=professional_military_1,
+                professional_military=professional_military_list,
                 admin_levels=admin_level_list)
 pp.pprint(afdurn._obj_to_dict())
 
