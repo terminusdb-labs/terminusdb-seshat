@@ -128,7 +128,7 @@ class TerritoryValue(SocialComplexity):
     _schema = seshat_schema
     label = 'Polity territory'
     _subdocument = []
-    territory_range: DecimalRange
+    territory_range: 'DecimalRange'
     territory_date:' ScopedValue'
 
 class ProfessionalMilitaryValue(Military):
@@ -198,11 +198,11 @@ dur = Duration()
 dur.duration = [1741,1826]
 
 territory_1 = TerritoryValue()
-territory_1.territory_range = [60000,80000]
+territory_1.territory_range = [6000.0,8000.0]
 territory_1.territory_date = 1772
 
 territory_2 = TerritoryValue()
-territory_2.territory_range = [179000,490000]
+territory_2.territory_range = [17900.0,49000.0]
 territory_2.territory_date = 1800
 
 territory_list = Territory()

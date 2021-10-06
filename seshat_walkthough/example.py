@@ -1,5 +1,5 @@
 from terminusdb_client.woqlschema import WOQLSchema, DocumentTemplate, LexicalKey, EnumTemplate, HashKey, RandomKey
-from terminusdb_client import WOQLClient
+from terminusdb_client import WOQLClient, WOQLQuery
 from typing import List, Optional, Set
 from enum import Enum
 import pprint as pp
@@ -162,7 +162,6 @@ class ProfessionalMilitaryValue(Military):
     _schema = seshat_schema
     _subdocument = []
     label = 'Professional military'
-    _subdocument = []
     epistemic_state: 'EpistemicState'
     scope: 'ScopedValue'
 
@@ -269,3 +268,9 @@ afdurn = Polity(polid='af_durn', originalID='Afdurrn',
 pp.pprint(afdurn._obj_to_dict())
 
 client.insert_document(afdurn, commit_msg=f"Inserting data")
+
+
+documents = client.query_document({'@type': 'ScopedValue',
+                                   'disputed': True})
+
+print(list(documents))

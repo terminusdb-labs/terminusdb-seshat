@@ -1,0 +1,3770 @@
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(13:52:11 on schem_internal_review ✖ ✹)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)───────────────(astrochelonian@zachariah:pts/1)─┐
+└─(13:52:18 on schem_internal_review ✖ ✹)──> python seshat_instances.py 
+python seshat_instances.py 
+zsh: command not found: python
+┌─(~/Documents/terminusdb-seshat/schemata_python)───────────────(astrochelonian@zachariah:pts/1)─┐
+db-seshat/schemata_python)───────────────(astrochelonian@zachariah:pts/1)─┐
+<                     
+
+ian@zachariah:pts/1)─┐
+<                    
+
+ian@zachariah:pts/1)─┐
+<                     
+
+ian@zachariah:pts/1)─┐
+<                     
+ian@zachariah:pts/1)─┐
+<                     ian@zachariah:pts/1)─┐
+zsh: parse error near `)'
+ian@zachariah:pts/1)─┐
+<                     <                     
+zsh: parse error near `\n'
+ian@zachariah:pts/1)─┐
+<                     
+
+ian@zachariah:pts/1)─┐
+<                     
+
+ian@zachariah:pts/1)─┐
+<                     
+ian@zachariah:pts/1)─┐
+<                     ian@zachariah:pts/1)─┐
+zsh: parse error near `)'
+ian@zachariah:pts/1)─┐
+<                     <                     
+zsh: parse error near `\n'
+ian@zachariah:pts/1)─┐
+<                     python -m pip install git+https://github.com/terminusdb/terminusdb-client-python.git
+<minusdb/terminusdb-client-python.git
+zsh: command not found: python
+ian@zachariah:pts/1)─┐
+┌─(...n)───(astrochelonian@zachariah:pts/1)─┐
+└─(13:54:41 on schem_internal_review ✖ ✹)──> python3 -m pip install git+https://github.com/terminusdb/terminusdb-client-python.git
+<n3 -m pip install git+https://github.com/terminusdb/terminusdb-client-python.git
+Collecting git+https://github.com/terminusdb/terminusdb-client-python.git
+  Cloning https://github.com/terminusdb/terminusdb-client-python.git to /tmp/pip-req-build-492t9d1k
+  Running command git clone -q https://github.com/terminusdb/terminusdb-client-python.git /tmp/pip-req-build-492t9d1k
+Requirement already satisfied (use --upgrade to upgrade): terminusdb-client==1.1.1 from git+https://github.com/terminusdb/terminusdb-client-python.git in /home/astrochelonian/Documents/terminusdb-client-python
+Requirement already satisfied: requests in /usr/lib/python3/dist-packages (from terminusdb-client==1.1.1) (2.22.0)
+Building wheels for collected packages: terminusdb-client
+  Building wheel for terminusdb-client (setup.py) ... done
+  Created wheel for terminusdb-client: filename=terminusdb_client-1.1.1-py2.py3-none-any.whl size=97856 sha256=8a837b4980926b0dc0ffd3c7f0f99f91b3ea468dfe6599b3dfb67e7688330c87
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ulc3mj0z/wheels/10/ae/73/e0a0402c11f6dc1dc6c927407f3106c9d4ad1ffd95f97a1a9c
+Successfully built terminusdb-client
+┌─(~/Documents/terminusdb-seshat/schemata_python)──────────────(astrochelonian@zachariah:pts/1)─┐
+└─(13:54:57 on schem_internal_review ✖ ✹)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)──────────────(astrochelonian@zachariah:pts/1)─┐
+└─(13:55:19 on schem_internal_review ✖ ✹)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)──────────────(astrochelonian@zachariah:pts/1)─┐
+└─(13:57:27 on schem_internal_review ✹)──> python3 -m pip installterminusdb-client
+python3 -m pip installterminusdb-client
+ERROR: unknown command "installterminusdb-client"
+┌─(~/Documents/terminusdb-seshat/schemata_python)──────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:00:28 on schem_internal_review ✹ ✭)──> python3 -m pip install terminusdb-client
+python3 -m pip install terminusdb-client
+Requirement already satisfied: terminusdb-client in /home/astrochelonian/Documents/terminusdb-client-python (1.1.1)
+Requirement already satisfied: requests in /usr/lib/python3/dist-packages (from terminusdb-client) (2.22.0)
+┌─(~/Documents/terminusdb-seshat/schemata_python)──────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:00:35 on schem_internal_review ✹ ✭)──> cd ..
+cd ..
+┌─(~/Documents/terminusdb-seshat)──────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:01:06 on schem_internal_review ✹ ✭)──> cd ..
+cd ..
+┌─(~/Documents)────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:01:10)──> cd terminusdb-client-python/
+cd terminusdb-client-python/
+┌─(~/Documents/terminusdb-client-python)───────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:01:18 on dev ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+python3: can't open file 'seshat_instances.py': [Errno 2] No such file or directory
+┌─(~/Documents/terminusdb-client-python)───────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:01:33 on dev ✭)──> cd ..
+cd ..
+┌─(~/Documents)────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents)────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents)────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents)────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:02:00)──> cd terminusdb-seshat/
+cd terminusdb-seshat/
+┌─(~/Documents/terminusdb-seshat)─────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:02:01 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+python3: can't open file 'seshat_instances.py': [Errno 2] No such file or directory
+┌─(~/Documents/terminusdb-seshat)─────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:02:06 on schem_internal_review ✹ ✭)──> ls
+ls
+LICENSE  README.md  schemata_python
+┌─(~/Documents/terminusdb-seshat)─────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:02:14 on schem_internal_review ✹ ✭)──> cd schemata_python/
+cd schemata_python/
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:02:24 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:02:29 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:02:57 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 2
+    from terminusdb-client.woqlschema.woql_schema import (
+                   ^
+SyntaxError: invalid syntax
+┌─(~/Documents/terminusdb-seshat/schemata_python)── ───────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:03:13 on schem_internal_review ✖ ✹)──> ┌─(~/Documents/terminusdb-seshat/schemata_python)── ───────────(astrochelonian@zachariah:pts/1)─┐
+</Documents/terminusdb-seshat/schemata_python)── ───────────(astrochelonian@zachariah:pts/1)─┐
+zsh: bad pattern: ┌─(~/Documents/terminusdb-seshat/schemata_python)──
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:03:51 on schem_internal_review ✖ ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐cd ..
+ ┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐cd ..
+<ochelonian@zachariah:pts/1)─┐cd ..
+zsh: bad pattern: ┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐cd
+cd ..
+cd ..
+cd ..
+cd ..
+┌─(...)───(astrochelonian@zachariah:pts/1)─┐
+└─(14:09:22)──> cd Documents
+cd Documents
+cd: no such file or directory: Documents
+┌─(...)───(astrochelonian@zachariah:pts/1)─┐
+└─(14:09:40)──> ls
+ls
+danitests
+django_girls
+emacs-prolog
+owlapi-jsonld-master
+Protege-5.5.0
+seshat-3store-master
+seshat_schemata
+seshat_test
+terminusdb
+terminusdb-bootstrap
+terminusdb-client-python
+terminusdb-seshat
+terminusdb-store
+terminus_store_prolog
+terminus-tmp
+tmp
+tutorial
+zsh
+┌─(...)───(astrochelonian@zachariah:pts/1)─┐
+└─(14:09:43)──> cd terminusdb-seshat/
+┌─(...)───(astrochelonian@zachariah:pts/1)─┐
+└─(14:50:00 on schem_internal_review)──> cd ..
+cd ..
+┌─(~/Documents)──────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:50:10)──> cd terminusdb-seshat/
+cd terminusdb-seshat/
+┌─(~/Documents/terminusdb-seshat)────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:50:22 on schem_internal_review)──> git checkout main
+git checkout main
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+┌─(~/Documents/terminusdb-seshat)─────────────────────────── ─(astrochelonian@zachariah:pts/1)─┐
+└─(14:50:28 on main)──> git checkout 28e475f
+git checkout 28e475f
+Note: switching to '28e475f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 28e475f initial commit - First proposal
+┌─(~/Documents/terminusdb-seshat)────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:51:48 on 28e475f)──> python3 seshat_instances.py
+python3 seshat_instances.py
+python3: can't open file 'seshat_instances.py': [Errno 2] No such file or directory
+┌─(~/Documents/terminusdb-seshat)────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:52:06 on 28e475f)──> ls
+ls
+LICENSE  README.md  schemata_python
+┌─(~/Documents/terminusdb-seshat)────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:52:13 on 28e475f)──> cd schemata_python
+cd schemata_python
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:52:21 on 28e475f)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 3, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:52:24 on 28e475f)──> cd ~
+cd ~
+┌─(~)────────────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:57:57)──> python3 -m pip install terminusdb-client
+python3 -m pip install terminusdb-client
+Requirement already satisfied: terminusdb-client in ./Documents/terminusdb-client-python (1.1.1)
+Requirement already satisfied: requests in /usr/lib/python3/dist-packages (from terminusdb-client) (2.22.0)
+┌─(~)────────────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:58:12)──> cd Documentss
+cd Documentss
+cd: no such file or directory: Documentss
+┌─(~)────────────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:58:20)──> cd Documents
+cd Documents
+┌─(~/Documents)──────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:58:24)──> cd terminusdb-seshat/
+cd terminusdb-seshat/
+┌─(~/Documents/terminusdb-seshat)────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:58:31 on 28e475f)──> git checkout main
+git checkout main
+Previous HEAD position was 28e475f initial commit - First proposal
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+┌─(~/Documents/terminusdb-seshat)────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:58:41 on main)──> git checkout schem_internal_review
+git checkout schem_internal_review
+Switched to branch 'schem_internal_review'
+┌─(~/Documents/terminusdb-seshat)────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:59:12 on schem_internal_review)──> cd schemata_python/
+cd schemata_python/
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:59:27 on schem_internal_review)──> python3 seshat_instances.py
+python3 seshat_instances.py 
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(14:59:37 on schem_internal_review)──> python -m pip install terminusdb-client
+python -m pip install terminusdb-client
+zsh: command not found: python
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:00:34 on schem_internal_review)──> python3 -m pip3 install terminusdb-client
+python3 -m pip3 install terminusdb-client
+/usr/bin/python3: No module named pip3
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:00:45 on schem_internal_review)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:06:01 on schem_internal_review)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from ...terminusdb_client.woqlschema.woql_schema import (
+ImportError: attempted relative import with no known parent package
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:10:27 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 2, in <module>
+    from ...terminusdb_client.woqlschema.woql_schema import (
+ImportError: attempted relative import with no known parent package
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:14:25 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 6, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:14:50 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 6, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:15:20 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 6, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:15:49 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 6, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:16:22 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 6, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:18:40 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 6, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:21:09 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 6, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:21:25 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 6, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:21:30 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 3
+    from terminusdb-client-python.terminusdb_client.woqlschema.woql_schema import (
+                   ^
+SyntaxError: invalid syntax
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:28:03 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 3, in <module>
+    from .terminusdb_client.woqlschema.woql_schema import (
+ImportError: attempted relative import with no known parent package
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:28:22 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 3, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:28:37 on schem_internal_review ✹)──> cd ..
+cd ..
+┌─(~/Documents/terminusdb-seshat)────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:29:14 on schem_internal_review ✹)──> cd ..
+cd ..
+┌─(~/Documents)──────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:29:15)──> cd terminusdb-client-python/
+cd terminusdb-client-python/
+┌─(~/Documents/terminusdb-client-python)─────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:29:24 on dev ✭)──> ls
+ls
+CONTRIBUTING.md  makefile    RELEASE_NOTES.md     seshat_schema      terminusdb_client.egg-info
+docs             Pipfile     requirements-dev.in  setup.cfg          tox.ini
+install.txt      pytest.ini  requirements.in      setup.py
+LICENSE          README.md   schemata_python      terminusdb_client
+┌─(~/Documents/terminusdb-client-python)─────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:29:25 on dev ✭)──> cd schemata_python/
+cd schemata_python/
+┌─(~/Documents/terminusdb-client-python/schemata_python)─────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-client-python/schemata_python)─────(astrochelonian@zachariah:pts/1)─┐
+└─(15:30:07 on dev ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 3, in <module>
+    from terminusdb_client.woqlschema.woql_schema import (
+ModuleNotFoundError: No module named 'terminusdb_client.woqlschema.woql_schema'
+┌─(~/Documents/terminusdb-client-python/schema ta_python)──────(astrochelonian@zachariah:pts/1)─┐
+└─(15:30:15 on dev ✭)──> ┌─(~/Documents/terminusdb-client-python/schema ta_python)──────(astrochelonian@zachariah:pts/1)─┐
+<b-client-python/schema ta_python)──────(astrochelonian@zachariah:pts/1)─┐
+zsh: bad pattern: ┌─(~/Documents/terminusdb-client-python/schema ta_python)──────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-client-python/schemata_python)──────(astrochelonian@zachariah:pts/1)─┐
+└─(15:43:45 on dev ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/typing.py", line 500, in __init__
+    code = compile(arg, '<string>', 'eval')
+  File "<string>", line 1
+    xsd:NonNegativeInteger
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "seshat_instances.py", line 140, in <module>
+    class Administrative_level(ScopedValue, Politics):
+  File "seshat_instances.py", line 143, in Administrative_level
+    admin_level = Set['xsd:NonNegativeInteger']
+  File "/usr/lib/python3.8/typing.py", line 258, in inner
+    return cached(*args, **kwds)
+  File "/usr/lib/python3.8/typing.py", line 685, in __getitem__
+    params = tuple(_type_check(p, msg) for p in params)
+  File "/usr/lib/python3.8/typing.py", line 685, in <genexpr>
+    params = tuple(_type_check(p, msg) for p in params)
+  File "/usr/lib/python3.8/typing.py", line 139, in _type_check
+    return ForwardRef(arg)
+  File "/usr/lib/python3.8/typing.py", line 502, in __init__
+    raise SyntaxError(f"Forward reference must be an expression -- got {arg!r}")
+SyntaxError: Forward reference must be an expression -- got 'xsd:NonNegativeInteger'
+┌─(~/Documents/terminusdb-client-python/schemata_python)──────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-client-python/schemata_python)──────(astrochelonian@zachariah:pts/1)─┐
+└─(15:46:58 on dev ✭)──> python3 seshat_instances.py
+sdb-client-python/schemata_python)──────(astrochelonian@zachariah:pts/1)─┐
+└─(15:46:58 on dev ✭)──> python3 seshat_instances.py
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/typing.py", line 500, in __init__
+    code = compile(arg, '<string>', 'eval')
+  File "<string>", line 1
+    xsd:NonNegativeInteger
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "seshat_instances.py", line 140, in <module>
+    class Administrative_level(ScopedValue, Politics):
+  File "seshat_instances.py", line 143, in Administrative_level
+    admin_level = Set['xsd:NonNegativeInteger']
+  File "/usr/lib/python3.8/typing.py", line 258, in inner
+    return cached(*args, **kwds)
+  File "/usr/lib/python3.8/typing.py", line 685, in __getitem__
+    params = tuple(_type_check(p, msg) for p in params)
+  File "/usr/lib/python3.8/typing.py", line 685, in <genexpr>
+    params = tuple(_type_check(p, msg) for p in params)
+  File "/usr/lib/python3.8/typing.py", line 139, in _type_check
+    return ForwardRef(arg)
+  File "/usr/lib/python3.8/typing.py", line 502, in __init__
+    raise SyntaxError(f"Forward reference must be an expression -- got {arg!r}")
+SyntaxError: Forward reference must be an expression -- got 'xsd:NonNegativeInteger'
+┌─(...)───(astrochelonian@zachariah:pts/1)─┐
+┌─(...)───(astrochelonian@zachariah:pts/1)─┐
+└─(15:57:21 on dev ✭)──> 
+
+┌─(~/Documents/terminusdb-client-python/schemata_python)──────(astrochelonian@zachariah:pts/1)─┐
+└─(15:57:26 on dev ✭)──> s
+s
+zsh: command not found: s
+┌─(~/Documents/terminusdb-client-python/schemata_python)──────(astrochelonian@zachariah:pts/1)─┐
+└─(15:57:33 on dev ✭)──> ls
+ls
+seshat_instances.py
+┌─(~/Documents/terminusdb-client-python/schemata_python)──────(astrochelonian@zachariah:pts/1)─┐
+└─(15:57:34 on dev ✭)──> cd ..
+cd ..
+┌─(~/.local/share/Trash/files/terminusdb-client-python.2)─────(astrochelonian@zachariah:pts/1)─┐
+└─(15:57:42 on dev ✭)──> ls
+ls
+CONTRIBUTING.md  makefile    RELEASE_NOTES.md     seshat_schema      terminusdb_client.egg-info
+docs             Pipfile     requirements-dev.in  setup.cfg          tox.ini
+install.txt      pytest.ini  requirements.in      setup.py
+LICENSE          README.md   schemata_python      terminusdb_client
+┌─(~/.local/share/Trash/files/terminusdb-client-python.2)─────(astrochelonian@zachariah:pts/1)─┐
+└─(15:57:43 on dev ✭)──> git status
+git status
+On branch dev
+Your branch is up-to-date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	schemata_python/
+	seshat_schema/
+
+nothing added to commit but untracked files present (use "git add" to track)
+┌─(~/.local/share/Trash/files/terminusdb-client-python.2)─────(astrochelonian@zachariah:pts/1)─┐
+└─(15:57:51 on dev ✭)──> cd ..
+cd ..
+┌─(~/.local/share/Trash/files)────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:58:06)──> cd ..
+cd ..
+┌─(~/.local/share/Trash)──────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:58:08)──> cd ..
+cd ..
+┌─(~/.local/share)────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:58:09)──> cd ..
+cd ..
+┌─(~/.local)──────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:58:10)──> cd ~
+cd ~
+┌─(~)─────────────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~)─────────────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~)─────────────────────────────────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:58:23)──> cd Documents/terminusdb-seshat/
+cd Documents/terminusdb-seshat/
+┌─(~/Documents/terminusdb-seshat)─────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:58:25 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+python3: can't open file 'seshat_instances.py': [Errno 2] No such file or directory
+┌─(~/Documents/terminusdb-seshat)─────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:59:45 on schem_internal_review ✹)──> ls
+ls
+LICENSE  README.md  schemata_python
+┌─(~/Documents/terminusdb-seshat)─────────────────────────────(astrochelonian@zachariah:pts/1)─┐
+└─(15:59:58 on schem_internal_review ✹)──> cd schemata_python/
+cd schemata_python/
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:00:02 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/typing.py", line 500, in __init__
+    code = compile(arg, '<string>', 'eval')
+  File "<string>", line 1
+    xsd:NonNegativeInteger
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "seshat_instances.py", line 140, in <module>
+    class Administrative_level(ScopedValue, Politics):
+  File "seshat_instances.py", line 143, in Administrative_level
+    admin_level = Set['xsd:NonNegativeInteger']
+  File "/usr/lib/python3.8/typing.py", line 258, in inner
+    return cached(*args, **kwds)
+  File "/usr/lib/python3.8/typing.py", line 685, in __getitem__
+    params = tuple(_type_check(p, msg) for p in params)
+  File "/usr/lib/python3.8/typing.py", line 685, in <genexpr>
+    params = tuple(_type_check(p, msg) for p in params)
+  File "/usr/lib/python3.8/typing.py", line 139, in _type_check
+    return ForwardRef(arg)
+  File "/usr/lib/python3.8/typing.py", line 502, in __init__
+    raise SyntaxError(f"Forward reference must be an expression -- got {arg!r}")
+SyntaxError: Forward reference must be an expression -- got 'xsd:NonNegativeInteger'
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:00:07 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 153, in <module>
+    class Polity(DocumentTemplate):
+  File "seshat_instances.py", line 162, in Polity
+    administrative_level: Set[Administrative_levels]
+NameError: name 'Administrative_levels' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:00:58 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 192, in <module>
+    adm_level1 = Administrative_level(nonNegativeInteger='4',dates='1800',disputed=True)
+NameError: name 'Administrative_level' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:01:37 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 203, in <module>
+    client = WOQLClient("http://127.0.0.1:6363/")
+NameError: name 'WOQLClient' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:02:07 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@id': 'BoxedType',
+  '@inherits': ['TaggedUnion'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal',
+  'decimal_range': 'xsd:decimalRange',
+  'epistemic_state': "<enum 'enum_EpistemicState'>",
+  'gYear': 'xsd:gYear',
+  'gYearRange': 'xdd:gYearRange',
+  'integer': 'xsd:integer',
+  'integer_range': 'xsd:integerRange',
+  'nonNegativeInteger': 'xsd:nonNegativeInteger',
+  'string': 'xsd:string'},
+ {'@id': 'ScopedValue',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'present']},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#decimalRange'}' (a dict)"}
+Traceback (most recent call last):
+  File "seshat_instances.py", line 221, in <module>
+    client.insert_document(seshat_schema_dict,
+  File "/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py", line 1195, in insert_document
+    return json.loads(_finish_reponse(result))
+  File "/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woql_utils.py", line 146, in _finish_reponse
+    raise DatabaseError(request_response)
+terminusdb_client.errors.DatabaseError: Unknown Error: check DatabaseError.error_obj for details
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "seshat_instances.py", line 226, in <module>
+    sys.exit(1)
+NameError: name 'sys' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:03:08 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@id': 'BoxedType',
+  '@inherits': ['TaggedUnion'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal',
+  'decimal_range': 'xsd:decimalRange',
+  'epistemic_state': "<enum 'enum_EpistemicState'>",
+  'gYear': 'xsd:gYear',
+  'gYearRange': 'xdd:gYearRange',
+  'integer': 'xsd:integer',
+  'integer_range': 'xsd:integerRange',
+  'nonNegativeInteger': 'xsd:nonNegativeInteger',
+  'string': 'xsd:string'},
+ {'@id': 'ScopedValue',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'present']},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#decimalRange'}' (a dict)"}
+Traceback (most recent call last):
+  File "seshat_instances.py", line 221, in <module>
+    client.insert_document(seshat_schema_dict,
+  File "/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py", line 1195, in insert_document
+    return json.loads(_finish_reponse(result))
+  File "/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woql_utils.py", line 146, in _finish_reponse
+    raise DatabaseError(request_response)
+terminusdb_client.errors.DatabaseError: Unknown Error: check DatabaseError.error_obj for details
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "seshat_instances.py", line 226, in <module>
+    sys.exit(1)
+NameError: name 'sys' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:08:00 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'present']},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@id': 'ScopedValue',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'BoxedType',
+  '@inherits': ['TaggedUnion'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal',
+  'decimal_range': 'xsd:decimalRange',
+  'epistemic_state': "<enum 'enum_EpistemicState'>",
+  'gYear': 'xsd:gYear',
+  'gYearRange': 'xdd:gYearRange',
+  'integer': 'xsd:integer',
+  'integer_range': 'xsd:integerRange',
+  'nonNegativeInteger': 'xsd:nonNegativeInteger',
+  'string': 'xsd:string'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#decimalRange'}' (a dict)"}
+┌─(~/Documents/terminusdb-seshat/schemata_python)─────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:08:30 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.PeakDate object at 0x7f92368e1280>
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'present']},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@id': 'ScopedValue',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'dates': 'BoxedType'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'BoxedType',
+  '@inherits': ['TaggedUnion'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal',
+  'decimal_range': 'xsd:decimalRange',
+  'epistemic_state': "<enum 'enum_EpistemicState'>",
+  'gYear': 'xsd:gYear',
+  'gYearRange': 'xdd:gYearRange',
+  'integer': 'xsd:integer',
+  'integer_range': 'xsd:integerRange',
+  'nonNegativeInteger': 'xsd:nonNegativeInteger',
+  'string': 'xsd:string'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'dates': 'BoxedType'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#decimalRange'}' (a dict)"}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:11:25 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.PeakDate object at 0x7fe03a1bc250>
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:13:55 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.PeakDate object at 0x7f6987b86250>
+Traceback (most recent call last):
+  File "seshat_instances.py", line 187, in <module>
+    print(afdurn.to_dict())
+AttributeError: 'Polity' object has no attribute 'to_dict'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:16:31 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.PeakDate object at 0x7f4af50ff250>
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:17:41 on schem_internal_review ✹)──>python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.PeakDate object at 0x7f69b08bb250>
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:24:20 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.PeakDate object at 0x7fa127992250>
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:27:19 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:27:54 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:28:36 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 111, in <module>
+    class PeakDate(ScopedValue, GeneralInfo):
+  File "seshat_instances.py", line 116, in PeakDate
+    peak_date: Set[ScopedValue.gYear]
+AttributeError: type object 'ScopedValue' has no attribute 'gYear'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:29:43 on schem_internal_review ✹)──> 
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:29:59 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:30:02 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:30:55 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 111, in <module>
+    class PeakDate(ScopedValue, GeneralInfo):
+  File "seshat_instances.py", line 116, in PeakDate
+    peak_date: ScopedValue.gYear
+AttributeError: type object 'ScopedValue' has no attribute 'gYear'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:31:14 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:31:36 on schem_internal_review ✹)──>python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:32:16 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:33:24 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Class', '@id': 'Polity', '@key': {'@type': 'Random'}, 'polid': 'xsd:string', 'originalID': 'xsd:string', 'peak_date': {'@type': 'Set', '@class': 'PeakDate'}, 'duration': {'@type': 'Set', '@class': 'Duration'}, 'territory': {'@type': 'Set', '@class': 'Territory'}, 'professional_military': {'@type': 'Set', '@class': 'ProfessionalMilitary'}, 'administrative_level': {'@type': 'Set', '@class': 'Administrative_level'}}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:33:57 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+Traceback (most recent call last):
+  File "seshat_instances.py", line 187, in <module>
+    print(afdurn.to_dict())
+AttributeError: 'Polity' object has no attribute 'to_dict'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:34:43 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+Traceback (most recent call last):
+  File "seshat_instances.py", line 187, in <module>
+    pp.pprint(affdurrn._obj_to_dict())
+NameError: name 'affdurrn' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:46:56 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:47:20 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:47:58 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.PeakDate object at 0x7ff0eef27250>
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [<__main__.PeakDate object at 0x7ff0eef27250>],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:50:35 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.PeakDate object at 0x7ff0be419250>
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [<__main__.PeakDate object at 0x7ff0be419250>],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:51:01 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.PeakDate object at 0x7fa154046250>
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [<__main__.PeakDate object at 0x7fa154046250>],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:51:23 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:54:33 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:54:53 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:55:47 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 111, in <module>
+    class PeakDate(ScopedValue, GeneralInfo):
+  File "seshat_instances.py", line 116, in PeakDate
+    peak_date: BoxedType.gYear
+AttributeError: type object 'BoxedType' has no attribute 'gYear'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:56:45 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:56:57 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 111, in <module>
+    class PeakDate(ScopedValue, BoxedType):
+  File "seshat_instances.py", line 116, in PeakDate
+    peak_date: gYear
+NameError: name 'gYear' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:57:55 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(16:58:34 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 187, in <module>
+    print(peak_date_1)
+NameError: name 'peak_date_1' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:04:50 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:05:20 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:06:12 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:07:15 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:08:04 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:08:27 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761],
+ 'polid': 'af_durn'}
+Traceback (most recent call last):
+  File "seshat_instances.py", line 192, in <module>
+    pp.pprint(BoxedType._obj_to_dict())
+TypeError: _obj_to_dict() missing 1 required positional argument: 'self'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:09:34 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761],
+ 'polid': 'af_durn'}
+Traceback (most recent call last):
+  File "seshat_instances.py", line 192, in <module>
+    pp.pprint(BoxedType._obj_to_dict(self))
+NameError: name 'self' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:10:12 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761],
+ 'polid': 'af_durn'}
+Traceback (most recent call last):
+  File "seshat_instances.py", line 192, in <module>
+    pp.pprint(BoxedType.obj_to_dict())
+AttributeError: type object 'BoxedType' has no attribute 'obj_to_dict'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:10:29 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': 1761,
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:13:30 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+[1761, 2323]
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761, 2323],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:13:53 on schem_internal_review ✹)──> python3 seshat_instances.py
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:15:23 on schem_internal_review ✹)──> 
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:15:35 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': 1761,
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:16:16 on schem_internal_review ✹)──> 
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:16:38 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': 1761,
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:17:23 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': 1761,
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:56:21 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+[1761, 1236]
+{'@type': 'Polity',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761, 1236],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:56:55 on schem_internal_review ✹)──> 
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:57:11 on schem_internal_review ✹)──> python3 seshat_instances.py
+python3 seshat_instances.py
+[1761, 1236]
+{'@type': 'Polity',
+ 'duration': 112,
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761, 1236],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:34:36 on schem_internal_review ✹ ✭)──> 
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:35:06 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+[1761, 1236]
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': [1761, 1236],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:35:08 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+['1761', '1236']
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761', '1236'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:35:27 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:35:57 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': 112,
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:49:22 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+['1761', '1236']
+{'@type': 'Polity',
+ 'duration': 112,
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761', '1236'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:49:40 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 114, in <module>
+    class PeakDate(DocumentTemplate):
+  File "seshat_instances.py", line 119, in PeakDate
+    peak_date: BoxedType.gYear
+AttributeError: type object 'BoxedType' has no attribute 'gYear'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:53:26 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 114, in <module>
+    class PeakDate(DocumentTemplate):
+  File "seshat_instances.py", line 119, in PeakDate
+    peak_date: gYear
+NameError: name 'gYear' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:53:49 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 114, in <module>
+    class PeakDate(DocumentTemplate, BoxedType):
+  File "seshat_instances.py", line 119, in PeakDate
+    peak_date: gYear
+NameError: name 'gYear' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:54:32 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 114, in <module>
+    class PeakDate(DocumentTemplate, BoxedType):
+TypeError: Cannot create a consistent method resolution
+order (MRO) for bases DocumentTemplate, BoxedType
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:54:46 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 30, in <module>
+    class BoxedType(EnumTeplate):
+NameError: name 'EnumTeplate' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:55:53 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 114, in <module>
+    class PeakDate(DocumentTemplate, BoxedType):
+TypeError: metaclass conflict: the metaclass of a derived class must be a (non-strict) subclass of the metaclasses of all its bases
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:56:10 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 114, in <module>
+    class PeakDate(BoxedType):
+  File "/usr/lib/python3.8/enum.py", line 146, in __prepare__
+    metacls._check_for_existing_members(cls, bases)
+  File "/usr/lib/python3.8/enum.py", line 527, in _check_for_existing_members
+    raise TypeError(
+TypeError: PeakDate: cannot extend enumeration 'BoxedType'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(18:56:38 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+['1761', '1236']
+{'@type': 'Polity',
+ 'duration': 112,
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761', '1236'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:08:57 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+['1761', '1236']
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761', '1236'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:09:39 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+abcsd
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': 'abcsd',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:10:09 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+['1761', '1236']
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': ['1761', '1236'],
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:12:45 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': 1761,
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:14:32 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:14:55 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:15:27 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:15:42 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:17:09 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:18:51 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:19:39 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 202, in <module>
+    print(PeakDate.peak_date)
+AttributeError: type object 'PeakDate' has no attribute 'peak_date'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:20:00 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 204, in <module>
+    peak_date=PeakDate.peak_date, duration=Duration.duration)
+AttributeError: type object 'PeakDate' has no attribute 'peak_date'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:20:25 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:22:13 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:23:55 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 204
+    PeakDate.peak_date, duration=Duration.duration)
+    ^
+SyntaxError: positional argument follows keyword argument
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:24:21 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '112',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:32:00 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1761
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:32:27 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 206, in <module>
+    territory_1 = Territory(DecimalRange='[60000,80000]',dates='1772')
+TypeError: Territory() takes no arguments
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:37:07 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.Territory object at 0x7ff265d741f0>
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:38:09 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 206
+    territory_1 = Territory.(DecimalRange='[60000,80000]',dates='1772')
+                            ^
+SyntaxError: invalid syntax
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:38:29 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+<__main__.Territory object at 0x7f115bb9e1f0>
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(19:39:18 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+[2134, 4355]
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(20:03:28 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+['2134, 4355']
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(20:03:45 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+[2134, 4355]
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn'}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(20:04:11 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+[2134, 4355]
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'territory': [<__main__.Territory object at 0x7f1a1ac4d1f0>,
+               <__main__.Territory object at 0x7f1a1ac4d250>]}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(20:05:14 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 215, in <module>
+    print(Territory.decimal_range)
+AttributeError: type object 'Territory' has no attribute 'decimal_range'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(20:13:04 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:25:12 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': [<__main__.ProfessionalMilitary object at 0x7fb08d9d71f0>],
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:26:40 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': [<__main__.ProfessionalMilitary object at 0x7fef89a8c220>],
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:27:02 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 221, in <module>
+    professional_military_1 = ProfessionalMilitary.epistemic_state
+AttributeError: type object 'ProfessionalMilitary' has no attribute 'epistemic_state'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:28:38 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 221, in <module>
+    professional_military_1 = ProfessionalMilitary.epistemic_state
+AttributeError: type object 'ProfessionalMilitary' has no attribute 'epistemic_state'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:29:34 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': [<__main__.ProfessionalMilitary object at 0x7f181e1cc220>],
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:33:30 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': [<__main__.ProfessionalMilitary object at 0x7fc7dfb4e220>],
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:34:45 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': [<__main__.ProfessionalMilitary object at 0x7fad1dcfc220>],
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:37:11 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:37:34 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:39:18 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+  File "seshat_instances.py", line 224
+    ScopedValue.inferred=True)
+    ^
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:40:05 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+  File "seshat_instances.py", line 224
+    ScopedValue.inferred==True)
+    ^
+SyntaxError: positional argument follows keyword argument
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:40:27 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+  File "seshat_instances.py", line 225
+    ScopedValue().inferred=True)
+    ^
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:45:34 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+  File "seshat_instances.py", line 225
+    ScopedValue().inferred==True)
+    ^
+SyntaxError: positional argument follows keyword argument
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:45:43 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+  File "seshat_instances.py", line 225
+    section.inferred=True)
+    ^
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:46:12 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+  File "seshat_instances.py", line 225
+    section.inferred='True')
+    ^
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:46:28 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:48:25 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(21:53:31 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'ProfessionalMilitary',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, Military],
+  '@type': 'Class',
+  'epist_state': 'enum_EpistemicState'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'present']},
+ {'@id': 'Territory',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, SocialComplexity],
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'Duration',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, GeneralInfo],
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'PeakDate',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, GeneralInfo],
+  '@type': 'Class'},
+ {'@id': 'ScopedValue', '@key': {'@type': 'Random'}, '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@id': 'BoxedType',
+  '@inherits': ['TaggedUnion'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal',
+  'decimal_range': 'xsd:decimalRange',
+  'epistemic_state': "<enum 'enum_EpistemicState'>",
+  'gYear': 'xsd:gYear',
+  'gYearRange': 'xdd:gYearRange',
+  'integer': 'xsd:integer',
+  'integer_range': 'xsd:integerRange',
+  'nonNegativeInteger': 'xsd:nonNegativeInteger',
+  'string': 'xsd:string'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class'}]
+Traceback (most recent call last):
+  File "seshat_instances.py", line 269, in <module>
+    client.insert_document(seshat_schema_dict,
+  File "/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py", line 1188, in insert_document
+    result = requests.post(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 452, in prepare_request
+    p.prepare(
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 316, in prepare
+    self.prepare_body(data, files, json)
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 466, in prepare_body
+    body = complexjson.dumps(json)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 382, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 272, in default
+    raise TypeError('Object of type %s is not JSON serializable' %
+TypeError: Object of type TerminusClass is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "seshat_instances.py", line 273, in <module>
+    print(E.error_obj)
+AttributeError: 'TypeError' object has no attribute 'error_obj'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(22:09:41 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@id': 'BoxedType',
+  '@inherits': ['TaggedUnion'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal',
+  'decimal_range': 'xsd:decimalRange',
+  'epistemic_state': "<enum 'enum_EpistemicState'>",
+  'gYear': 'xsd:gYear',
+  'gYearRange': 'xdd:gYearRange',
+  'integer': 'xsd:integer',
+  'integer_range': 'xsd:integerRange',
+  'nonNegativeInteger': 'xsd:nonNegativeInteger',
+  'string': 'xsd:string'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'ProfessionalMilitary',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, Military],
+  '@type': 'Class',
+  'epist_state': 'enum_EpistemicState'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'present']},
+ {'@id': 'Territory',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, SocialComplexity],
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'Duration',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, GeneralInfo],
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'PeakDate',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, GeneralInfo],
+  '@type': 'Class'},
+ {'@id': 'ScopedValue', '@key': {'@type': 'Random'}, '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'}]
+Traceback (most recent call last):
+  File "seshat_instances.py", line 257, in <module>
+    client.insert_document(seshat_schema.to_dict(),
+  File "/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py", line 1188, in insert_document
+    result = requests.post(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 452, in prepare_request
+    p.prepare(
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 316, in prepare
+    self.prepare_body(data, files, json)
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 466, in prepare_body
+    body = complexjson.dumps(json)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 382, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 272, in default
+    raise TypeError('Object of type %s is not JSON serializable' %
+TypeError: Object of type TerminusClass is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "seshat_instances.py", line 261, in <module>
+    print(E.error_obj)
+AttributeError: 'TypeError' object has no attribute 'error_obj'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(22:17:51 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': '1761',
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+{'@id': 'UserDatabase_test_seshat', '@type': 'UserDatabase', 'comment': '', 'creation_date': '2021-07-27T21:17:50.000Z', 'label': 'test_seshat', 'name': 'test_seshat', 'state': 'finalized'}
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+('admin', 'root')
+[{'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'present']},
+ {'@id': 'Territory',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, SocialComplexity],
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'Duration',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, GeneralInfo],
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'PeakDate',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, GeneralInfo],
+  '@type': 'Class'},
+ {'@id': 'ScopedValue', '@key': {'@type': 'Random'}, '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'BoxedType',
+  '@inherits': ['TaggedUnion'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal',
+  'decimal_range': 'xsd:decimalRange',
+  'epistemic_state': "<enum 'enum_EpistemicState'>",
+  'gYear': 'xsd:gYear',
+  'gYearRange': 'xdd:gYearRange',
+  'integer': 'xsd:integer',
+  'integer_range': 'xsd:integerRange',
+  'nonNegativeInteger': 'xsd:nonNegativeInteger',
+  'string': 'xsd:string'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'ProfessionalMilitary',
+  '@key': {'@type': 'Random'},
+  '@subdocument': [ScopedValue, BoxedType, Military],
+  '@type': 'Class',
+  'epist_state': 'enum_EpistemicState'}]
+Traceback (most recent call last):
+  File "seshat_instances.py", line 257, in <module>
+    client.insert_document(seshat_schema.to_dict(),
+  File "/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py", line 1188, in insert_document
+    result = requests.post(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 452, in prepare_request
+    p.prepare(
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 316, in prepare
+    self.prepare_body(data, files, json)
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 466, in prepare_body
+    body = complexjson.dumps(json)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 382, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 296, in encode
+     chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3/dist-packages/simplejson/encoder.py", line 272, in default
+    raise TypeError('Object of type %s is not JSON serializable' %
+TypeError: Object of type TerminusClass is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "seshat_instances.py", line 261, in <module>
+    print(E.error_obj)
+AttributeError: 'TypeError' object has no attribute 'error_obj'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(22:18:41 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py 
+python3 seshat_instances.py 
+  File "seshat_instances.py", line 32
+    from: int
+        ^
+SyntaxError: invalid syntax
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(22:38:12 on schem_internal_review ✹ ✭)──>   '@inherits': ['Topic'],
+  '@inherits': ['Topic'],
+zsh: command not found: @inherits:
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:27:16 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 32
+    from: int
+        ^
+SyntaxError: invalid syntax
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:27:25 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 36, in <module>
+    class Decimal(TaggedUnion):
+  File "seshat_instances.py", line 38, in Decimal
+    input_int: decimal(int)
+NameError: name 'decimal' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:28:49 on schem_internal_review ✹ ✭)──>python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 36, in <module>
+    class DecimalNumber(TaggedUnion):
+  File "seshat_instances.py", line 38, in DecimalNumber
+    input_int: Decimal(int)
+TypeError: conversion from type to Decimal is not supported
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:30:09 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 36, in <module>
+    class DecimalNumber(TaggedUnion):
+  File "seshat_instances.py", line 38, in DecimalNumber
+    input_int: Decimal(int)
+TypeError: conversion from type to Decimal is not supported
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:30:11 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 36, in <module>
+    class DecimalNumber(TaggedUnion):
+  File "seshat_instances.py", line 38, in DecimalNumber
+    input_int: int.apply(Decimal)
+AttributeError: type object 'int' has no attribute 'apply'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:32:14 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 36, in <module>
+    class DecimalNumber(TaggedUnion):
+  File "seshat_instances.py", line 39, in DecimalNumber
+    dec: Decimal(value)
+NameError: name 'value' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:37:19 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 36, in <module>
+    class DecimalNumber(TaggedUnion):
+  File "seshat_instances.py", line 39, in DecimalNumber
+    dec: Decimal(value)
+NameError: name 'value' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:37:50 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': Decimal('123'),
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:39:12 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': Decimal('123'),
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:40:03 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 196, in <module>
+    x = decimal.Decimal(123)
+NameError: name 'decimal' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:40:25 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+1
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': 123,
+ 'polid': 'af_durn',
+ 'professional_military': {'@type': 'ProfessionalMilitary',
+                           'epist_state': 'present'},
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:41:42 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': 123,
+ 'polid': 'af_durn',
+ 'professional_military': <__main__.ProfessionalMilitary object at 0x7f5205cad370>,
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:42:46 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': Decimal('123'),
+ 'polid': 'af_durn',
+ 'professional_military': <__main__.ProfessionalMilitary object at 0x7f8b25ac83a0>,
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:43:22 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': Decimal('123'),
+ 'polid': 'af_durn',
+ 'professional_military': <__main__.ProfessionalMilitary object at 0x7ffaaa3e03a0>,
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:44:49 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+123
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': Decimal('123'),
+ 'polid': 'af_durn',
+ 'professional_military': <__main__.ProfessionalMilitary object at 0x7ff8976563a0>,
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:45:38 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 162, in <module>
+    class Polity(DocumentTemplate):
+  File "seshat_instances.py", line 167, in Polity
+    peak_date: Set[Decimal(PeakDate)] # typically only one but could be disputed
+TypeError: conversion from TerminusClass to Decimal is not supported
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:46:32 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 161, in <module>
+    class Polity(DocumentTemplate):
+  File "seshat_instances.py", line 166, in Polity
+    peak_date: Set[Decimal(PeakDate)] # typically only one but could be disputed
+TypeError: conversion from TerminusClass to Decimal is not supported
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:49:14 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+123
+{'@type': 'Polity',
+ 'duration': '[1741,1826]',
+ 'originalID': 'Afdurrn',
+ 'peak_date': 123,
+ 'polid': 'af_durn',
+ 'professional_military': <__main__.ProfessionalMilitary object at 0x7ffa75542340>,
+ 'territory': ['[60000,80000]:1772', '[179000,490000]:1800']}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:49:36 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 160
+    went to the loo, back in 5
+         ^
+SyntaxError: invalid syntax
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:57:21 on schem_internal_review ✹ ✭)──> 
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:57:57 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 31, in <module>
+    class IntegerRange(DocumentTemplate):
+  File "seshat_instances.py", line 34, in IntegerRange
+    to_int: Decimal(int)
+TypeError: conversion from type to Decimal is not supported
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:58:13 on schem_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 31, in <module>
+    class IntegerRange(DocumentTemplate):
+  File "seshat_instances.py", line 34, in IntegerRange
+    to_int: abs(int)
+TypeError: bad operand type for abs(): 'type'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(10:58:56 on schem_internal_review ✹ ✭)──> git status
+git status
+On branch schem_internal_review
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   seshat_instances.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	#*shell*#
+	.#*shell*
+
+no changes added to commit (use "git add" and/or "git commit -a")
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:03:00 on schem_internal_review ✹ ✭)──> git status
+git status
+On branch schem_internal_review
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   seshat_instances.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.#*shell*
+
+no changes added to commit (use "git add" and/or "git commit -a")
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:03:27 on schem_internal_review ✹ ✭)──> git add seshat_instances.py
+git add seshat_instances.py
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:03:51 on schem_internal_review ✚ ✭)──> git status
+git status
+On branch schem_internal_review
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   seshat_instances.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.#*shell*
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:03:55 on schem_internal_review ✚ ✭)──> git commit -m "partial commit. Branch to merge with main"
+<commit -m "partial commit. Branch to merge with main"
+[schem_internal_review 2aa4ede] partial commit. Branch to merge with main
+ 1 file changed, 46 insertions(+), 37 deletions(-)
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:05:02 on schem_internal_review ✭)──> git push origin shem_internal_review
+git push origin shem_internal_review
+error: src refspec shem_internal_review does not match any
+error: failed to push some refs to 'git@github.com:terminusdb-labs/terminusdb-seshat.git'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:05:26 on schem_internal_review ✭)──> git push origin schem_internal_review
+git push origin schem_internal_review
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 858 bytes | 858.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.        
+To github.com:terminusdb-labs/terminusdb-seshat.git
+   05272a5..2aa4ede  schem_internal_review -> schem_internal_review
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:05:41 on schem_internal_review ✭)──> git checkout main
+git checkout main
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:09:01 on main ✭)──> git status
+git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	#*shell*#
+	.#*shell*
+
+nothing added to commit but untracked files present (use "git add" to track)
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:24:51 on main ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 95
+    _schema = seshat_schema
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:26:40 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 111
+    _abstract = []
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:29:55 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 371
+    _schema = seshat_schema
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:30:20 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 387
+    _abstract = [] 
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:30:37 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 650
+    _schema = seshat_schema
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:34:00 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 650
+    _schema = seshat_schema
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:34:19 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 429
+    _abstract = [] 
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:34:29 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 501
+    administrative_level=[adm_level1,adm_level2] # NOTE a set of disputed values
+    ^
+SyntaxError: invalid syntax
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:34:52 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 538
+    administrative_level=[adm_level1,adm_level2] # NOTE a set of disputed values
+    ^
+SyntaxError: invalid syntax
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:35:07 on main ✹ ✭)──> 
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:35:22 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 565
+    epistemic_state: enum_EpistemicState
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:35:26 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 603
+    _schema = seshat_schema
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:38:09 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 688
+    administrative_level=[adm_level1,adm_level2] # NOTE a set of disputed values
+    ^
+SyntaxError: invalid syntax
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:38:37 on main ✹ ✭)──> 
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:38:55 on main ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 129, in <module>
+    class Polity(DocumentTemplate):
+  File "seshat_instances.py", line 138, in Polity
+    administrative_level: Set[Administrative_levels]
+NameError: name 'Administrative_levels' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:38:56 on main ✹ ✭)──> git status
+git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   seshat_instances.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	#*shell*#
+	.#*shell*
+
+no changes added to commit (use "git add" and/or "git commit -a")
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:59:03 on main ✹ ✭)──> git add seshat_instances.py 
+git add seshat_instances.py 
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:59:40 on main ✚ ✭)──> git status
+git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   seshat_instances.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	#*shell*#
+	.#*shell*
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(11:59:45 on main ✚ ✭)──> git commit -m "new schema sent on 27th of July 2021"
+git commit -m "new schema sent on 27th of July 2021"
+[main c9bdc88] new schema sent on 27th of July 2021
+ 1 file changed, 650 insertions(+), 176 deletions(-)
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:00:05 on main ✭)──> git push origin/main
+git push origin/main
+fatal: 'origin/main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:00:14 on main ✭)──> git push origin main
+git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 3.55 KiB | 3.55 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+To github.com:terminusdb-labs/terminusdb-seshat.git
+   7533243..c9bdc88  main -> main
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:00:22 on main ✭)──>git checkout -b "scem3_internal_review"
+git checkout -b "scem3_internal_review"
+Switched to a new branch 'scem3_internal_review'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+sdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:22:07 on scem3_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 129, in <module>
+    class Polity(DocumentTemplate):
+  File "seshat_instances.py", line 138, in Polity
+    administrative_level: Set[Administrative_levels]
+NameError: name 'Administrative_levels' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:22:20 on scem3_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+Traceback (most recent call last):
+  File "seshat_instances.py", line 164, in <module>
+    client = WOQLClient("http://127.0.0.1:6363/")
+NameError: name 'WOQLClient' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:22:51 on scem3_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+Traceback (most recent call last):
+  File "seshat_instances.py", line 175, in <module>
+    pp.pprint(seshat_schema_dict) # report the internal form of the full schema
+NameError: name 'pp' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:24:40 on scem3_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'ScopedValue', '@key': {'@type': 'Random'}, '@type': 'Class'},
+ {'@documentation': {'@comment': 'A particular Gregorian 4 digit year YYYY - '
+                                 'negative years are BCE',
+                     '@properties': {}},
+  '@id': 'GYear',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYear': 'xsd:gYear'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'Decimal',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal'},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'EpistemicState', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'absent_to_present', 'present', 'present_to_absent']},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'A simple number', '@properties': {}},
+  '@id': 'Integer',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer': 'xsd:integer'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@id': 'EpistemicState',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A 4-digit Gregorian year, YYYY, or if '
+                                 'uncertain, a range of years [YYYY,YYYY]',
+                     '@properties': {}},
+  '@id': 'GYearRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'DecimalRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'IntegerRange', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'DecimalRange', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@documentation': {'@comment': 'A simple number or range of integers',
+                     '@properties': {}},
+  '@id': 'IntegerRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'Any text or sequence of characters',
+                     '@properties': {}},
+  '@id': 'String',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'string': 'xsd:string'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#integerRange'}' (a dict)"}
+Traceback (most recent call last):
+  File "seshat_instances.py", line 177, in <module>
+    client.insert_document(seshat_schema_dict,
+  File "/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py", line 1195, in insert_document
+    return json.loads(_finish_reponse(result))
+  File "/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woql_utils.py", line 146, in _finish_reponse
+    raise DatabaseError(request_response)
+terminusdb_client.errors.DatabaseError: Unknown Error: check DatabaseError.error_obj for details
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "seshat_instances.py", line 182, in <module>
+    sys.exit(1)
+NameError: name 'sys' is not defined
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:25:02 on scem3_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'IntegerRange', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'DecimalRange', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'A particular Gregorian 4 digit year YYYY - '
+                                 'negative years are BCE',
+                     '@properties': {}},
+  '@id': 'GYear',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYear': 'xsd:gYear'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'Decimal',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number', '@properties': {}},
+  '@id': 'Integer',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer': 'xsd:integer'},
+ {'@id': 'EpistemicState',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'EpistemicState', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'absent_to_present', 'present', 'present_to_absent']},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'A 4-digit Gregorian year, YYYY, or if '
+                                 'uncertain, a range of years [YYYY,YYYY]',
+                     '@properties': {}},
+  '@id': 'GYearRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'DecimalRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number or range of integers',
+                     '@properties': {}},
+  '@id': 'IntegerRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'Any text or sequence of characters',
+                     '@properties': {}},
+  '@id': 'String',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'string': 'xsd:string'},
+ {'@id': 'ScopedValue', '@key': {'@type': 'Random'}, '@type': 'Class'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#integerRange'}' (a dict)"}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:25:21 on scem3_internal_review ✹ ✭)──> git checkout main
+git checkout main
+M	schemata_python/seshat_instances.py
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:27:50 on main ✹ ✭)──> git stash
+git stash
+Saved working directory and index state WIP on main: c9bdc88 new schema sent on 27th of July 2021
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:28:05 on main ✭)──> git reset --hard 2aa4ede
+git reset --hard 2aa4ede
+HEAD is now at 2aa4ede partial commit. Branch to merge with main
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:30:02 on main ✭)──> git status
+git status
+On branch main
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	#*shell*#
+	.#*shell*
+
+nothing added to commit but untracked files present (use "git add" to track)
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:30:08 on main ✭)──> git push origin HEAD --force
+git push origin HEAD --force
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:terminusdb-labs/terminusdb-seshat.git
+ + c9bdc88...2aa4ede HEAD -> main (forced update)
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:33:59 on main ✭)──> git status
+git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	#*shell*#
+	.#*shell*
+
+nothing added to commit but untracked files present (use "git add" to track)
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:34:50 on main ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@documentation': {'@comment': 'A particular Gregorian 4 digit year YYYY - '
+                                 'negative years are BCE',
+                     '@properties': {}},
+  '@id': 'GYear',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYear': 'xsd:gYear'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'Decimal',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number', '@properties': {}},
+  '@id': 'Integer',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer': 'xsd:integer'},
+ {'@id': 'EpistemicState',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'EpistemicState', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'absent_to_present', 'present', 'present_to_absent']},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'A 4-digit Gregorian year, YYYY, or if '
+                                 'uncertain, a range of years [YYYY,YYYY]',
+                     '@properties': {}},
+  '@id': 'GYearRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'DecimalRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number or range of integers',
+                     '@properties': {}},
+  '@id': 'IntegerRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'Any text or sequence of characters',
+                     '@properties': {}},
+  '@id': 'String',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'string': 'xsd:string'},
+ {'@id': 'ScopedValue', '@key': {'@type': 'Random'}, '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'IntegerRange', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'DecimalRange', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#integerRange'}' (a dict)"}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:41:16 on main ✹ ✭)──> git status
+git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   seshat_instances.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	#*shell*#
+	.#*shell*
+
+no changes added to commit (use "git add" and/or "git commit -a")
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:43:14 on main ✹ ✭)──> git add seshat_instances.py 
+git add seshat_instances.py 
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:43:23 on main ✚ ✭)──> git status
+git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   seshat_instances.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	#*shell*#
+	.#*shell*
+
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:43:28 on main ✚ ✭)──> git commit -m "new schema sent on 27th of July 2021"
+git commit -m "new schema sent on 27th of July 2021"
+[main 7848873] new schema sent on 27th of July 2021
+ 1 file changed, 93 insertions(+), 177 deletions(-)
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:43:53 on main ✭)──> git push origin main
+git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.73 KiB | 1.73 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.        
+To github.com:terminusdb-labs/terminusdb-seshat.git
+   2aa4ede..7848873  main -> main
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:44:08 on main ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@documentation': {'@comment': 'A particular Gregorian 4 digit year YYYY - '
+                                 'negative years are BCE',
+                     '@properties': {}},
+  '@id': 'GYear',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYear': 'xsd:gYear'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'Decimal',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number', '@properties': {}},
+  '@id': 'Integer',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer': 'xsd:integer'},
+ {'@id': 'EpistemicState',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'EpistemicState', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'absent_to_present', 'present', 'present_to_absent']},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'A 4-digit Gregorian year, YYYY, or if '
+                                 'uncertain, a range of years [YYYY,YYYY]',
+                     '@properties': {}},
+  '@id': 'GYearRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'DecimalRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number or range of integers',
+                     '@properties': {}},
+  '@id': 'IntegerRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'Any text or sequence of characters',
+                     '@properties': {}},
+  '@id': 'String',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'string': 'xsd:string'},
+ {'@id': 'ScopedValue', '@key': {'@type': 'Random'}, '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'IntegerRange', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'DecimalRange', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#integerRange'}' (a dict)"}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:45:01 on main ✭)──> git -b checkout "schem3_internal_review"
+git -b checkout "schem3_internal_review"
+unknown option: -b
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(12:58:48 on main ✭)──> git checkout -b  "schem3_internal_review"
+git checkout -b  "schem3_internal_review"
+Switched to a new branch 'schem3_internal_review'
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:18:38 on schem3_internal_review ✭)──> git checkout -b  "schem3_internal_review"
+git checkout -b  "schem3_internal_review"
+fatal: A branch named 'schem3_internal_review' already exists.
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:35:23 on schem3_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@documentation': {'@comment': 'A particular Gregorian 4 digit year YYYY - '
+                                 'negative years are BCE',
+                     '@properties': {}},
+  '@id': 'GYear',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYear': 'xsd:gYear'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'Decimal',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number', '@properties': {}},
+  '@id': 'Integer',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer': 'xsd:integer'},
+ {'@id': 'EpistemicState',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'EpistemicState', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@id': 'enum_EpistemicState',
+  '@type': 'Enum',
+  '@value': ['absent', 'absent_to_present', 'present', 'present_to_absent']},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'A 4-digit Gregorian year, YYYY, or if '
+                                 'uncertain, a range of years [YYYY,YYYY]',
+                     '@properties': {}},
+  '@id': 'GYearRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'DecimalRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number or range of integers',
+                     '@properties': {}},
+  '@id': 'IntegerRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'Any text or sequence of characters',
+                     '@properties': {}},
+  '@id': 'String',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'string': 'xsd:string'},
+ {'@id': 'ScopedValue', '@key': {'@type': 'Random'}, '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'IntegerRange', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'DecimalRange', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#integerRange'}' (a dict)"}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:35:36 on schem3_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+  File "seshat_instances.py", line 13
+    from enum import Enum
+    ^
+IndentationError: unexpected indent
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(17:47:41 on schem3_internal_review ✹ ✭)──> python3 seshat_instances.py
+python3 seshat_instances.py
+/home/astrochelonian/Documents/terminusdb-client-python/terminusdb_client/woqlclient/woqlClient.py:813: UserWarning: Delete Database Warning: You have not specify the accountid, assuming admin/test_seshat
+  warnings.warn(
+[{'@abstract': [],
+  '@id': 'Administrative_level',
+  '@inherits': ['ScopedValue', 'IntegerRange', 'Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@id': 'Territory',
+  '@inherits': ['ScopedValue', 'DecimalRange', 'SocialComplexity', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Root of topic hierarchy', '@properties': {}},
+  '@id': 'Topic',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@abstract': [],
+  '@id': 'PeakDate',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'A particular Gregorian 4 digit year YYYY - '
+                                 'negative years are BCE',
+                     '@properties': {}},
+  '@id': 'GYear',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYear': 'xsd:gYear'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Political variables', '@properties': {}},
+  '@id': 'Politics',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'Decimal',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal': 'xsd:decimal'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Social Complexity variables',
+                     '@properties': {}},
+  '@id': 'SocialComplexity',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number', '@properties': {}},
+  '@id': 'Integer',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer': 'xsd:integer'},
+ {'@id': 'EpistemicState',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@abstract': [],
+  '@id': 'ProfessionalMilitary',
+  '@inherits': ['ScopedValue', 'EpistemicState', 'Military', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'epistemic_state': "<enum 'enum_EpistemicState'>"},
+ {'@id': 'Polity',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'administrative_level': {'@class': 'Administrative_level', '@type': 'Set'},
+  'duration': {'@class': 'Duration', '@type': 'Set'},
+  'originalID': 'xsd:string',
+  'peak_date': {'@class': 'PeakDate', '@type': 'Set'},
+  'polid': 'xsd:string',
+  'professional_military': {'@class': 'ProfessionalMilitary', '@type': 'Set'},
+  'territory': {'@class': 'Territory', '@type': 'Set'}},
+ {'@abstract': [],
+  '@id': 'Duration',
+  '@inherits': ['ScopedValue', 'GYearRange', 'GeneralInfo', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@subdocument': [],
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@documentation': {'@comment': 'A 4-digit Gregorian year, YYYY, or if '
+                                 'uncertain, a range of years [YYYY,YYYY]',
+                     '@properties': {}},
+  '@id': 'GYearRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'gYearRange': 'xdd:gYearRange'},
+ {'@id': 'ScopedValue', '@key': {'@type': 'Random'}, '@type': 'Class'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Legal system variables', '@properties': {}},
+  '@id': 'Legal',
+  '@inherits': ['Politics', 'Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A decimal number', '@properties': {}},
+  '@id': 'DecimalRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'decimal_range': 'xsd:decimalRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'Miltiary variables', '@properties': {}},
+  '@id': 'Military',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'A simple number or range of integers',
+                     '@properties': {}},
+  '@id': 'IntegerRange',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'integer_range': 'xsd:integerRange'},
+ {'@abstract': [],
+  '@documentation': {'@comment': 'General information variables',
+                     '@properties': {}},
+  '@id': 'GeneralInfo',
+  '@inherits': ['Topic'],
+  '@key': {'@type': 'Random'},
+  '@type': 'Class'},
+ {'@documentation': {'@comment': 'Any text or sequence of characters',
+                     '@properties': {}},
+  '@id': 'String',
+  '@key': {'@type': 'Random'},
+  '@type': 'Class',
+  'string': 'xsd:string'}]
+{'code': 500, 'message': "dict_create/3: Type error: `key-value' expected, found `witness{'@type':not_a_class_or_base_type,class:'http://www.w3.org/2001/XMLSchema#integerRange'}' (a dict)"}
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+┌─(~/Documents/terminusdb-seshat/schemata_python)────────────(astrochelonian@zachariah:pts/1)─┐
+└─(20:41:25 on schem3_internal_review ✹ ✭)──> 
