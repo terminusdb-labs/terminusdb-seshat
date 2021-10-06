@@ -81,22 +81,19 @@ list_Variable = df["Variable"].unique()
 list_actual_value = df["ActualValue"].unique()
 
 df_polity = df.groupby("PolityName")
-df_section = df_polity.get_group("AfDurrn").groupby("Section")
+#df_section = df_polity.get_group("AfDurrn").groupby("Section")
+print(df_polity)
 #find words with highest frequency in column to conver to booleans
 #for name in list_polity_name:
 #    df_section = df_polity.groupby("Section")
-df_test = df_section.get_group("Warfare variables").groupby("Subsection").get_group("Military Technologies")
-j = (df_test.groupby(['Subsection'])
-       .apply(lambda x: dict(zip(x.Variable, x.ActualValue)))
-       .reset_index()
-       .rename(columns={0: "Value"})
-       .to_json(orient='records'))
+# df_test = df_section.get_group("Warfare variables").groupby("Subsection").get_group("Military Technologies")
 
-#print(df_test)
-value_str = df_test["Variable"].unique()
-#print(value_str)
-list_weapons = []
 
+
+# #print(df_test)
+# value_str = df_test["Variable"].unique()
+# #print(value_str)
+# list_weapons = []
 
 def epistemic_state_func(actual_value):
     if actual_value == "present":
@@ -106,8 +103,6 @@ def epistemic_state_func(actual_value):
     elif actual_value == "UNKNOWN":
         return EpistemicState.unknown
 
-
-
 def scoped_value_func(actual_value):
     section = ScopedValue()
     if actual_value == "inferred":
@@ -115,26 +110,6 @@ def scoped_value_func(actual_value):
     elif actual_value == "suspected":
         section.suspected == True
     return section
-
-for technology in value_str:
-    ep_state = df_test.loc[df_test["Variable"] == technology]
-    #print(type(ep_state["Variable"].iloc[0]))
-    ep_state_v = epistemic_state_func(ep_state["ActualValue"].iloc[0])
-    section_v = scoped_value_func(ep_state["Confidence"].iloc[0])
-    #print(ep_state["Confidence"].iloc[0])
-    # ep_state_v = EpistemicS
-    pew_pew_value = MilitaryTechValue(epistemic_state=ep_state_v, value=technology,
-    scope = section_v)
-    #pp.pprint(pew_pew_value._obj_to_dict)
-    list_weapons.append(pew_pew_value)
-
-milit_tech_list = MilitaryTechnologies()
-milit_tech_list.military_technologies = list_weapons
-pp.pprint(milit_tech_list._obj_to_dict())
-
-
-afdurn = Polity(polid='af_durn', originalID='Afdurrn',
-                mil_tech=milit_tech_list)
 
 
 user = "dani"
@@ -150,6 +125,74 @@ if exists:
 client.create_database("seshat.v1")  # reset the DB
 
 seshat_schema.commit(client, commit_msg="Adding Schema")
-client.insert_document(afdurn, commit_msg=f"Inserting data")
+
+
+
+
+for polity in df_polity:
+    polity_military_tech = polity[1].loc[(polity[1]["Section"] == "Warfare variables") &
+                      (polity[1]["Subsection"] == "Military Technologies")]
+    technology = polity_military_tech["Variable"]
+    list_weapons=[]
+    for tech_variable in technology:
+        ep_state = polity_military_tech.loc[polity_military_tech["Variable"]
+                                            == tech_variable]
+        ep_state_v = epistemic_state_func(
+            ep_state["ActualValue"].iloc[0])
+        section_v = scoped_value_func(ep_state["Confidence"].iloc[0])
+        weapon_value = MilitaryTechValue(epistemic_state=ep_state_v, value=tech_variable,
+        scope = section_v)
+        list_weapons.append(weapon_value)
+
+    milit_tech_list = MilitaryTechnologies()
+    milit_tech_list.military_technologies = list_weapons
+    pp.pprint(milit_tech_list._obj_to_dict())
+
+    pol_doc = Polity(polid=polity[0], originalID=polity[0],
+                     mil_tech=milit_tech_list)
+    client.insert_document(pol_doc, commit_msg=f"Inserting data")
+
+
+
+
+
+
+
+
+# for technology in value_str:
+#     ep_state = df_test.loc[df_test["Variable"] == technology]
+#     #print(type(ep_state["Variable"].iloc[0]))
+#     ep_state_v = epistemic_state_func(ep_state["ActualValue"].iloc[0])
+#     section_v = scoped_value_func(ep_state["Confidence"].iloc[0])
+#     #print(ep_state["Confidence"].iloc[0])
+#     # ep_state_v = EpistemicS
+#     weapon_value = MilitaryTechValue(epistemic_state=ep_state_v, value=technology,
+#     scope = section_v)
+#     #pp.pprint(pew_pew_value._obj_to_dict)
+#     list_weapons.append(weapon_value)
+
+# milit_tech_list = MilitaryTechnologies()
+# milit_tech_list.military_technologies = list_weapons
+# pp.pprint(milit_tech_list._obj_to_dict())
+
+
+# afdurn = Polity(polid='af_durn', originalID='Afdurrn',
+#                 mil_tech=milit_tech_list)
+
+
+# user = "dani"
+# team = "PAOK-test"  # My team name.
+# endpoint = f"https://cloud.terminusdb.com/PAOK-test/"
+# client = WOQLClient(endpoint)
+
+# client.connect(user=user, team=team, use_token=True)
+
+# exists = client.get_database("seshat.v1")
+# if exists:
+#     client.delete_database("seshat.v1")
+# client.create_database("seshat.v1")  # reset the DB
+
+# seshat_schema.commit(client, commit_msg="Adding Schema")
+# client.insert_document(afdurn, commit_msg=f"Inserting data")
 
 
