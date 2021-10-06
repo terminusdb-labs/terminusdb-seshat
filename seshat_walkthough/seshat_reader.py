@@ -45,10 +45,10 @@ class MilitaryTechValue(WarfareVariables):
     _schema = seshat_schema
     _subdocument = []
     _key = RandomKey
-    epistemic_state: 'EpistemicState'
-    scope: 'ScopedValue'
+    epistemic_state: Optional['EpistemicState']
+    scope: Optional['ScopedValue']
     value: str
-    number: int
+    number: Optional[int]
 
 
 class MilitaryTechnologies(DocumentTemplate):
@@ -64,8 +64,7 @@ class Polity(DocumentTemplate):
     _key = LexicalKey(["polid"])
     originalID: str  # to compare with the old wiki polity page names
     # in order to permit uncertain or disputed values with different dates all seshat properties are Set[]
-    mil_tech: 'MilitaryTechnologies'  # typically only one but could be disputed
-
+    mil_tech: 'MilitaryTechnologies'
 
 ### Scope ofthis is to get a basic json schema and doc export from a seshat csv file.
 df = pd.read_csv("seshat_test.csv", sep='|')
@@ -106,8 +105,8 @@ def epistemic_state_func(actual_value):
         return EpistemicState.absent
     elif actual_value == "UNKNOWN":
         return EpistemicState.unknown
-    else:
-        return int(actual_value)
+
+
 
 def scoped_value_func(actual_value):
     section = ScopedValue()
@@ -115,18 +114,23 @@ def scoped_value_func(actual_value):
         section.inferred = True
     elif actual_value == "suspected":
         section.suspected == True
+    return section
 
 for technology in value_str:
     ep_state = df_test.loc[df_test["Variable"] == technology]
-    #print(list)
-    ep_state_v = ep_state["ActualValue"].apply(epistemic_state_func)
-    section_v = ep_state["Confidence"].apply(scoped_value_func)
+    #print(type(ep_state["Variable"].iloc[0]))
+    ep_state_v = epistemic_state_func(ep_state["ActualValue"].iloc[0])
+    section_v = scoped_value_func(ep_state["Confidence"].iloc[0])
+    #print(ep_state["Confidence"].iloc[0])
+    # ep_state_v = EpistemicS
     pew_pew_value = MilitaryTechValue(epistemic_state=ep_state_v, value=technology,
     scope = section_v)
+    #pp.pprint(pew_pew_value._obj_to_dict)
     list_weapons.append(pew_pew_value)
 
 milit_tech_list = MilitaryTechnologies()
 milit_tech_list.military_technologies = list_weapons
+pp.pprint(milit_tech_list._obj_to_dict())
 
 
 afdurn = Polity(polid='af_durn', originalID='Afdurrn',
@@ -145,7 +149,7 @@ if exists:
     client.delete_database("seshat.v1")
 client.create_database("seshat.v1")  # reset the DB
 
-#commit schema?
+seshat_schema.commit(client, commit_msg="Adding Schema")
 client.insert_document(afdurn, commit_msg=f"Inserting data")
 
 
