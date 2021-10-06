@@ -54,7 +54,7 @@ class MilitaryTechValue(WarfareVariables):
 class MilitaryTechnologies(DocumentTemplate):
     _schema = seshat_schema
     _subdocument = []
-    military_technologies: List['MilitaryTechValue']
+    military_technologies: Optional[List['MilitaryTechValue']]
 
 
 class Polity(DocumentTemplate):
@@ -127,22 +127,28 @@ client.create_database("seshat.v1")  # reset the DB
 seshat_schema.commit(client, commit_msg="Adding Schema")
 
 
-
-
 for polity in df_polity:
-    polity_military_tech = polity[1].loc[(polity[1]["Section"] == "Warfare variables") &
+    if polity[1]["Subsection"] == "Military Technologies":
+
+        polity_military_tech = polity[1].loc[(polity[1]["Section"] == "Warfare variables") &
                       (polity[1]["Subsection"] == "Military Technologies")]
-    technology = polity_military_tech["Variable"]
-    list_weapons=[]
-    for tech_variable in technology:
-        ep_state = polity_military_tech.loc[polity_military_tech["Variable"]
+        technology = polity_military_tech["Variable"]
+        list_weapons=[]
+        for tech_variable in technology:
+            ep_state = polity_military_tech.loc[polity_military_tech["Variable"]
                                             == tech_variable]
-        ep_state_v = epistemic_state_func(
-            ep_state["ActualValue"].iloc[0])
-        section_v = scoped_value_func(ep_state["Confidence"].iloc[0])
-        weapon_value = MilitaryTechValue(epistemic_state=ep_state_v, value=tech_variable,
-        scope = section_v)
-        list_weapons.append(weapon_value)
+            ep_state_v = epistemic_state_func(
+                ep_state["ActualValue"].iloc[0])
+            if type(ep_state["ActualValue"].iloc[0]) == int or type(ep_state["ActualValue"].iloc[0]) == float:
+                number_of_weapons = ep_state["ActualValue"].iloc[0]
+                print(type(number_of_weapons))
+            section_v = scoped_value_func(ep_state["Confidence"].iloc[0])
+            weapon_value = MilitaryTechValue(epistemic_state=ep_state_v, value=tech_variable,
+            scope = section_v, number=number_of_weapons)
+            list_weapons.append(weapon_value)
+    if polity[1]["Variable"] == "RA":
+        polity_ra = polity[1].loc[polity[1]["Variable"]=="RA"]
+        #print(polity_ra)
 
     milit_tech_list = MilitaryTechnologies()
     milit_tech_list.military_technologies = list_weapons
