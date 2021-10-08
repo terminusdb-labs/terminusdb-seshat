@@ -1,3 +1,4 @@
+from terminusdb_client import WOQLClient
 from typing import List, Optional, Set
 from terminusdb_client.woqlschema.woql_schema import (
     DocumentTemplate,
@@ -235,28 +236,28 @@ afdurn = Polity(polid='af_durn',originalID='Afdurrn',
 
 pp.pprint(afdurn._obj_to_dict())
 
-client = WOQLClient("http://127.0.0.1:6363/")
-client.connect()
-exists = client.get_database("test_seshat")
+
+#!/usr/bin/python3
+
+team = "PAOK-test"
+client = WOQLClient("https://cloud.terminusdb.com/PAOK-test/")
+# make sure you have put the token in environment variable
+# https://docs.terminusdb.com/beta/#/terminusx/get-your-api-key
+client.connect(team=team, use_token=True)
+
+
+exists = client.get_database("seshat_connect_demo")
 if exists:
-    client.delete_database("test_seshat")
-client.create_database("test_seshat") # reset the DB
+    client.delete_database("seshat_connect_demo")
+client.create_database("seshat_connect_demo")  # reset the DB
 # Create the schema:
 seshat_schema_dict = seshat_schema.to_dict()
+# Commit the schema:
+seshat_schema.commit(client, commit_msg="Adding Schema")
+
 pp.pprint(seshat_schema_dict) # report the internal form of the full schema
-try:
-    client.insert_document(seshat_schema_dict,
-                           commit_msg="Creating the schema",
-                           graph_type="schema")
-except Exception as E:
-    print(E.error_obj)
-    sys.exit(1)
-# Add a single instance
+
+# Insert Document
+client.insert_document(afdurn, commit_msg=f"Inserting data")
+
 pp.pprint(afdurn._to_dict()) # report the internal form of the instance
-try:
-    client.insert_document(afdurn, commit_msg="Commit Afdurn", graph_type= "instance")
-except Exception as E:
-    print(E.error_obj)
-    sys.exit(2)
-results = client.get_all_documents(graph_type="instance")
-sys.exit(0)
