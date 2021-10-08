@@ -5,11 +5,15 @@ from enum import Enum
 import pprint as pp
 
 
+# I copied this from my profile.
 user = "dani"
 team = "PAOK-test"  # My team name.
+### DON'T FORGET TO ADD A TOKEN (check the link below)
+### https://docs.terminusdb.com/v10.0/#/terminusx/get-your-api-key
 endpoint = f"https://cloud.terminusdb.com/PAOK-test/"
 client = WOQLClient(endpoint)
 
+#Connect to the db
 client.connect(user=user, team=team, use_token=True)
 
 exists = client.get_database("test_seshat")
@@ -216,8 +220,10 @@ class Polity(DocumentTemplate):
     professional_military: 'ProfessionalMilitary'
     admin_levels: 'AdministrativeLevels'
 
+# After I wrote the schema above, I commit it
 seshat_schema.commit(client, commit_msg="Adding Schema")
 
+# Now I create some documents to add to the schema
 
 p_d = PeakDate()
 p_d.peak_date = 1761
@@ -225,7 +231,7 @@ p_d.peak_date = 1761
 dur_range = GYearRange()
 dur_range.g_year_range = {1741, 1826}
 dur = Duration()
-dur.duration = dur_range#.g_year_range
+dur.duration = dur_range
 
 
 territory_1 = TerritoryValue()
@@ -268,4 +274,5 @@ afdurn = Polity(polid='af_durn', originalID='Afdurrn',
                 admin_levels=admin_level_list)
 pp.pprint(afdurn._obj_to_dict())
 
+#Insert documents
 client.insert_document(afdurn, commit_msg=f"Inserting data")
