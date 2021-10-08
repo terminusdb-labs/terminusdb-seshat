@@ -158,6 +158,17 @@ class Language(DocumentTemplate):
     language_list: List['LanguageValue']
 
 
+class OriginalName(General):
+    _schema = seshat_schema
+    _subdocument = []
+    original_name_str: Optional[str]
+
+
+class ScaleSupraCulturalInteraction(General):
+    _schema = seshat_schema
+    _subdocument = []
+    scale_val: Optional[int]
+
 class GeneralValues(DocumentTemplate):
     _schema = seshat_schema
     _subdocument = []
@@ -165,7 +176,9 @@ class GeneralValues(DocumentTemplate):
     capital: Optional['Capital']
     degree_of_centralization: Optional['DegreeCentralization']
     language: Optional['Language']
-
+    original_name: Optional['OriginalName']
+    r_a: Optional['Ra']
+    scale_of_supracultural_interaction: Optional['ScaleSupraCulturalInteraction']
 
 class Polity(DocumentTemplate):
     _schema = seshat_schema
@@ -306,17 +319,39 @@ for polity in df_polity:
     for lang in gen_var_lang:
         lang_val = LanguageValue(language_val=lang)
         list_gen_var_lang.append(lang_val)
+    ## general variables - original name
+    gen_var_or_name = polity_gen_var.loc[polity_gen_var["Variable"]
+                                      == "Original name"]["ActualValue"]
+    if gen_var_or_name.empty == True:
+        orig_name_str = None
+    else:
+        orig_name_str  = gen_var_alt_name.iloc[0]
+    orig_name = OriginalName(original_name_str=orig_name_str)
+    #general variables- RA
+    polity_ra = polity[1].loc[polity[1]["Section"] == "Institutional Variables"]["ActualValue"]
+    list_ra_general = []
+    for value in polity_ra:
+        r_a_val = RAValue(r_a_value=value)
+        list_ra_general.append(r_a_val)
+    #general variables - scale of supracultural interaction
 
     lang_list = Language(language_list=list_gen_var_lang)
     capital_list = Capital(capital_list=list_gen_var_capital)
     degree_centralization_list = DegreeCentralization(
         degree_centr_list=list_gen_var_deg_centr)
     alt_names = AlternativeNames(alternative_names_list=list_gen_var_alt_names)
+    general_var_author_list = Ra()
+    general_var_author_list.r_a_list = list_ra_general
+
     general_val = GeneralValues()
     general_val.alternative_names = alt_names
     general_val.capital = capital_list
     general_val.degree_of_centralization = degree_centralization_list
     general_val.language = lang_list
+    general_val.original_name = orig_name
+    general_val.r_a = general_var_author_list
+
+
     inst_var_author_list = Ra()
     inst_var_author_list.r_a_list = list_ra_i_v
     inst_var = InstitutionalVariables()
